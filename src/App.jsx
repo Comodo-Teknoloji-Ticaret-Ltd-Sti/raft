@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Nav from './Components/Nav/Nav'
 import Index from './Components/Pages/Index'
 import About from './Components/Pages/About'
