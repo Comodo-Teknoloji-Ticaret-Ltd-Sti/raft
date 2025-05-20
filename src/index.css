@@ -41,7 +41,8 @@ body{
     overflow-x: hidden !important;
 }
 
-.custom-nav{
+/* Navbar Styles */
+.custom-nav {
     padding: 0 12%;
     height: 80px;
     border: 1px solid rgba(208, 201, 201, 0.5);
@@ -49,14 +50,20 @@ body{
     border-bottom-right-radius: 100px;
     z-index: 999;
     transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease;
+    z-index: 1000;
 }
+
 .white-theme a,
 .white-theme .search-icon {
     color: white !important;
 }  
 .black-theme {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }  
+.white-theme {
+    background-color: transparent;
+}
 .black-theme a,
 .black-theme .logo span,
 .black-theme .search-icon {
@@ -69,7 +76,7 @@ body{
 }
 .logo span{
     font-family: var(--Kings-font);
-    color: var(--white);
+    color: #007bff;
 }
 .nav-item a{
     font-size: 1.2rem;
@@ -105,6 +112,15 @@ body{
     background-color: var(--white) !important;
 }
 
+.navbar .nav-link {
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #007bff !important;
+}
+
 .modal{
     background-color: #00000065;
 }
@@ -112,6 +128,28 @@ body{
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
+}
+
+/* Mobil menü stilleri */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 1rem;
+    }
+
+    .navbar-collapse .nav-link {
+        color: white !important;
+    }
+
+    .white-theme .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .white-theme .navbar-toggler-icon {
+        filter: invert(1);
+    }
 }
 
 /* Hero Header */
