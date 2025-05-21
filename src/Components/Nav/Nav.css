@@ -1,0 +1,37 @@
+.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+/* Her durumda yazılar siyah olsun */
+.nav-link {
+  color: black !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .navbar-nav {
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-item {
+    padding: 0.5rem 0;
+  }
+
+  /* Mobil menüde de yazılar siyah */
+  .black-theme .nav-link,
+  .white-theme .nav-link {
+    color: black !important;
+  }
+}
