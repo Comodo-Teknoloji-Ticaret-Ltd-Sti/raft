@@ -1,5 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 import blogAuthor from './../../assets/blog-author.jpeg';
 import blog1 from './../../assets/blog1.webp';
@@ -7,6 +9,12 @@ import blog2 from './../../assets/blog2.webp';
 import blog3 from './../../assets/blog3.webp';
 import blog4 from './../../assets/blog4.webp';
 import blog5 from './../../assets/blog5.webp';
+
+import galleryimage1 from '../../assets/gallery-image1.webp';
+import galleryimage2 from '../../assets/gallery-image2.webp';
+import galleryimage3 from '../../assets/gallery-image3.webp';
+import galleryimage4 from '../../assets/gallery-image4.webp';
+import galleryimage5 from '../../assets/gallery-image5.webp';
 
 function Blog() {
     return (
@@ -226,8 +234,60 @@ function Blog() {
                     </div>
                 </div>
             </section >
+
+            {/* gallery section */}
+            <section className="gallery-grid my-5 mb-0">
+                <div className="row">
+                    <Swiper
+                        slidesPerView={5}
+                        autoplay={true}
+                        loop={true}
+                        breakpoints={{
+                            1300: { slidesPerView: 5 },
+                            575: { slidesPerView: 3 },
+                            0: { slidesPerView: 3 },
+                        }}
+                        className="gallery-swiper">
+                        <SwiperSlide>
+                            <div className="gallery-image">
+                                <img src={galleryimage1} alt="gallery" data-lightbox="image-1" className="img-fluid w-100" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="gallery-image">
+                                <img src={galleryimage2} alt="gallery" data-lightbox="image-2" className="img-fluid w-100" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="gallery-image">
+                                <img src={galleryimage3} alt="gallery" data-lightbox="image-3" className="img-fluid w-100" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="gallery-image">
+                                <img src={galleryimage4} alt="gallery" className="img-fluid w-100" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="gallery-image">
+                                <img src={galleryimage5} alt="gallery" className="img-fluid w-100" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="gallery-image">
+                                <img src={galleryimage2} alt="gallery" className="img-fluid w-100" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="gallery-image">
+                                <img src={galleryimage3} alt="gallery" className="img-fluid w-100" />
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </section>
         </>
     )
 }
 
-export default Blog
+export default Blog;

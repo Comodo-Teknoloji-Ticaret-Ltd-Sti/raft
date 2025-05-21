@@ -92,7 +92,7 @@ function Contact() {
             </section>
 
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118106.71772249676!2d73.09068439469182!3d22.322081830866296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f131!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1745399867222!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25562.818404558282!2d31.428061462746378!3d36.7861027240488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3577c5458f7a9%3A0x6dd8245f304b741!2sManavgat%2C%2007600%20Manavgat%2FAntalya!5e0!3m2!1str!2str!4v1747837463924!5m2!1str!2str"
                 width="100%"
                 height="500"
                 style={{ border: 0 }}

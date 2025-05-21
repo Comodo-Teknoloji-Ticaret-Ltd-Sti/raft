@@ -27,7 +27,7 @@ function Nav() {
       }`}>
         <div className="container">
           <Link to='/' className="logo navbar-brand">
-            Frost<span>Quest</span>
+            MC<span> Raft</span>
           </Link>
 
           <button
@@ -44,11 +44,11 @@ function Nav() {
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
-              <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
-              <li className="nav-item"><Link className="nav-link" to='/about'>About</Link></li>
-              <li className="nav-item"><Link className="nav-link" to='/tours'>Tour</Link></li>
-              <li className="nav-item"><Link className="nav-link" to='/blog'>Blog</Link></li>
-              <li className="nav-item"><Link className="nav-link" to='contact'>Contact</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/">Anasayfa</Link></li>
+              <li className="nav-item"><Link className="nav-link" to='/about'>Hakkımızda</Link></li>
+              {/* <li className="nav-item"><Link className="nav-link" to='/tours'>Tour</Link></li> */}
+              <li className="nav-item"><Link className="nav-link" to='/blog'>Aktiviteler</Link></li>
+              <li className="nav-item"><Link className="nav-link" to='contact'>İletişim</Link></li>
             </ul>
           </div>
         </div>

@@ -72,27 +72,27 @@ function Index() {
                 <SwiperSlide>
                     <div className="hero hero1 d-flex flex-column justify-content-center align-items-center">
                         <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center">
-                            <h2 className='text-white'>THE KINGDOM OF ICE</h2>
-                            <h1 className='text-white'>Green Land</h1>
-                            <button className="btn text-white hero-btn mt-5">LEARN MORE <img src={btnArrow} className='img-fluid' alt="" /></button>
+                            <h2 className='text-white'>Maceranın Doruğuna...</h2>
+                            <h1 className='text-white'>MC Raft</h1>
+                            <button className="btn text-white hero-btn mt-5">DAHA FAZLASI İÇİN<img src={btnArrow} className='img-fluid' alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="hero hero2 d-flex flex-column justify-content-center align-items-center">
                         <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center">
-                            <h2 className='text-white'>THE KINGDOM OF ICE</h2>
-                            <h1 className='text-white'>Green Land</h1>
-                            <button className="btn text-white hero-btn mt-5">LEARN MORE <img src={btnArrow} className='img-fluid' alt="" /></button>
+                            <h2 className='text-white'>Maceranın Doruğuna...</h2>
+                            <h1 className='text-white'>MC Raft</h1>
+                            <button className="btn text-white hero-btn mt-5">DAHA FAZLASI İÇİN<img src={btnArrow} className='img-fluid' alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="hero hero3 d-flex flex-column justify-content-center align-items-center">
                         <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center">
-                            <h2 className='text-white'>THE KINGDOM OF ICE</h2>
-                            <h1 className='text-white'>Green Land</h1>
-                            <button className="btn text-white hero-btn mt-5">LEARN MORE <img src={btnArrow} className='img-fluid' alt="" /></button>
+                            <h2 className='text-white'>Maceranın Doruğuna...</h2>
+                            <h1 className='text-white'>MC Raft</h1>
+                            <button className="btn text-white hero-btn mt-5">DAHA FAZLASI İÇİN<img src={btnArrow} className='img-fluid' alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -655,7 +655,7 @@ function Index() {
             </div>
             {/* footer bottom */}
             <div className="footer-bottom container-fluid  text-white bg-dark p-2 text-center">
-                <p className="mb-0 small">© 2025 <strong>K2infocom</strong> — All Rights Reserved.</p>
+                <p className="mb-0 small">© 2025 <strong>Comodo</strong> — All Rights Reserved.</p>
             </div>
         </>
     )
