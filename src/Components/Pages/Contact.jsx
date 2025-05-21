@@ -60,26 +60,18 @@ function Contact() {
                                     <p>support@envato.com</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <form className="contact-form">
-                                <div className="mb-3">
-                                    <input type="text" className="form-control" placeholder="Full name" />
-                                </div>
-                                <div className="mb-3">
-                                    <input type="email" className="form-control" placeholder="Email address" />
-                                </div>
-                                <div className="mb-3">
-                                    <input type="text" className="form-control" placeholder="Phone Number" />
-                                </div>
-                                <div className="mb-3">
-                                    <input type="text" className="form-control" placeholder="Subject" />
-                                </div>
-                                <div className="mb-3">
-                                    <textarea className="form-control" rows="4" placeholder="Type your message..."></textarea>
-                                </div>
-                                <button type="submit" className="btn w-100 fw-bold">Send Message Now</button>
-                            </form>
+                        </div>                        <div className="col-lg-6">
+                            <div className="maps-container h-100">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25562.818404558282!2d31.428061462746378!3d36.7861027240488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3577c5458f7a9%3A0x6dd8245f304b741!2sManavgat%2C%2007600%20Manavgat%2FAntalya!5e0!3m2!1str!2str!4v1747837463924!5m2!1str!2str"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0, borderRadius: "15px" }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                />
+                            </div>
                         </div>
                         <div className="contact-icons d-flex gap-2">
                             <i className="fab fa-facebook-f"></i>
@@ -90,16 +82,6 @@ function Contact() {
                     </div>
                 </div>
             </section>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25562.818404558282!2d31.428061462746378!3d36.7861027240488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3577c5458f7a9%3A0x6dd8245f304b741!2sManavgat%2C%2007600%20Manavgat%2FAntalya!5e0!3m2!1str!2str!4v1747837463924!5m2!1str!2str"
-                width="100%"
-                height="500"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-            />
         </>
     )
 }
