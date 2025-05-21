@@ -48,8 +48,8 @@ import blog3 from './../../assets/blog-3.webp'
 import footer from './../../assets/footer.webp'
 
 import { Link } from 'react-router-dom';
-
 import { motion } from "motion/react"
+import Footer from '../../Components/Footer/Footer';
 
 function Index() {
 
@@ -171,78 +171,7 @@ function Index() {
                             ))}
                         </SplideTrack>
                     </Splide>
-                    <p className='text-center mt-5 fs-5'>Want to see our top destinations. <Link to='destination'>Click here to View More</Link></p>
                 </motion.div>
-            </div>
-            {/* About */}
-            <div className="about py-5">
-                <div className="container">
-                    <div className="row">
-                        <motion.div className="col-lg-6 about-content-wrap"
-                            initial={{ opacity: 0, x: -100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-                            viewport={{ once: false, amount: 0.3 }}
-                        >
-                            <div className="section-title about-title">
-                                <div className="flex-column d-flex align-items-start justify-content-start gap-3">
-                                    <span className=" d-flex align-items-start gap-2">
-                                        <img src={plane} alt="" className="img-fluid" />
-                                        <span>About our company</span>
-                                        <img src={plane} alt="" className="img-fluid" />
-                                    </span>
-                                    <h2>Experience the World
-                                        with Our Company</h2>
-                                    <p>Embark on a transformative journey as our company invites you to
-                                        experience the world, creating unforgettable memories through
-                                        exceptional travel adventures.</p>
-                                </div>
-                            </div>
-                            <div className="row about-cols">
-                                <div className="col-md-6">
-                                    <div className="about-col-img position-relative">
-                                        <i className="bi bi-play-fill position-absolute"></i>
-                                        <img src={about2} className='img-fluid' alt="" />
-                                    </div>
-                                </div>
-                                <div className="col-md-6 about-cols p-3">
-                                    <h4 className='my-3'><img src={checkImg} className='img-fluid pe-2' alt="" /> Perfect Detailing</h4>
-                                    <h4 className='my-3'><img src={checkImg} className='img-fluid pe-2' alt="" /> Completed Certification</h4>
-                                    <h4 className='my-3'><img src={checkImg} className='img-fluid pe-2' alt="" /> Save Your Budget</h4>
-                                    <h4 className='my-3'><img src={checkImg} className='img-fluid pe-2' alt="" /> Free Consultations</h4>
-                                </div>
-                            </div>
-                            <div className="about-bottom mt-5 d-flex gap-4">
-                                <div className="btn-box">
-                                    <button className="btn custom-btn1">
-                                        Learn More
-                                        <img src={btnArrow} className='img-fluid ms-2' alt="" />
-                                    </button>
-                                </div>
-                                <div className="about-col-box d-flex align-items-center">
-                                    <div className="about-col-box-img">
-                                        <img src={tst1} className='img-fluid' alt="" />
-                                        <img src={tst2} className='img-fluid' alt="" />
-                                        <img src={tst3} className='img-fluid' alt="" />
-                                        <img src={tst4} className='img-fluid' alt="" />
-                                    </div>
-                                    <p className='ms-4 m-0 fs-5'>5.2+ Satisfied clients</p>
-                                </div>
-                            </div>
-                        </motion.div>
-                        <motion.div className="col-lg-6 about-img"
-                            initial={{ opacity: 0, x: 100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 1.2, ease: "easeOut", delay: 0.9 }}
-                            viewport={{ once: false, amount: 0.3 }}
-                        >
-                            <img src={about1} className='img-fluid' alt="" />
-                            <img src={abEleement1} className='img-fluid abElement-1 position-absolute' alt="" />
-                            <img src={abEleement2} className='img-fluid abElement-2 position-absolute' alt="" />
-                            <img src={abEleement3} className='img-fluid abElement-3 position-absolute' alt="" />
-                        </motion.div>
-                    </div>
-                </div>
             </div>
             {/* Discover */}
             <div className="discover py-5">
@@ -313,7 +242,6 @@ function Index() {
                         </div>
                     </motion.div>
                 </div>
-                <p className='text-center mt-5 fs-5'>Want to see our top destinations. <a href="#">Click here to View More</a></p>
             </div>
             {/* working Steps */}
             <div className="working py-5 position-relative">
@@ -359,38 +287,6 @@ function Index() {
                             <div className="step-content">
                                 <h2>Reach Airport on Date</h2>
                                 <p>Lobortis luctus neque duis lacinia volutp suspendisse pulvinar pen atibus malesu ada placerat..</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* Offers */}
-            <div className="offers py-5 position-relative overflow-hidden">
-                <img src={offerBG1} className='offer-img img-fluid position-absolute' alt="" />
-                <img src={offerBG2} className='offer-img2 img-fluid position-absolute' alt="" />
-                <div className="container">
-                    <div className="row">
-                        <div className="offers-wrapper position-relative">
-                            <div className="section-title offer-title">
-                                <div className="text-start flex-column d-flex align-items-start justify-content-start gap-3">
-                                    <span className=" d-flex align-items-center gap-2">
-                                        <img src={plane} alt="" className="img-fluid" />
-                                        <span>35% offer</span>
-                                        <img src={plane} alt="" className="img-fluid" />
-                                    </span>
-                                    <h2>Get Special Offer</h2>
-                                    <p className='text-start'>Embark on an unforgettable journey with our exclusive tour special
-                                        offer seize the moment and create lasting memories.</p>
-                                </div>
-                                <div className="btn-box offer-btn">
-                                    <button className="btn custom-btn1">
-                                        Learn More
-                                        <img src={btnArrow} className='img-fluid ms-2' alt="" />
-                                    </button>
-                                </div>
-                                <div className="offer-text position-absolute">
-                                    <h1 className='d-flex align-items-center'>40 <div className="offer-span d-flex flex-column">% <span>off</span></div></h1>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -479,184 +375,10 @@ function Index() {
                                 </div>
                             </SwiperSlide>
                         </Swiper>
-                    </div>
-                </div>
+                    </div>                </div>
             </div>
-            {/* banner */}
-            <div className="blog-banner py-5 container-fluid d-flex justify-content-center align-items-center">
-
-                <div className="container banner-title section-title d-flex text-center">
-
-                    <h2 >FrostQuest Is A World
-                        LeadingOnline Tour Booking
-                        Platform</h2>
-                    <div className="btn-box mt-5">
-                        <button className="btn custom-btn1">
-                            Learn More
-                            <img src={btnArrow} className='img-fluid ms-2' alt="" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-            {/* blogs  */}
-            <div className="container py-5">
-                <div className="row mb-4 align-items-center">
-                    <div className="col-md-6 section-title blog-title">
-                        <span className="text-primary fw-bold">BLOG & NEWS</span>
-                        <h2 className="fw-bold mt-2">Get More Update <br /> News & Blog</h2>
-                    </div>
-                    <div className="col-md-6">
-                        <p>
-                            Stay informed and inspired by subscribing to our newsletter for the latest news and insightful blog posts – your gateway to a world of updates.
-                        </p>
-                    </div>
-                </div>
-
-                <div className="row g-4">
-                    <div className="col-lg-4 col-md-6">
-                        <div className="card blog-card border-0 overflow-hidden ">
-                            <div className="blog-img">
-                                <img
-                                    src={blog1}
-                                    className="card-img"
-                                    alt="Blog 1"
-                                />
-                            </div>
-                            <div className="card-img-overlay d-flex flex-column justify-content-end         blog-overlay  ">
-                                <span>Read More</span>
-                                <div className="detail">
-
-                                    <h5 className="card-title fw-bold">Beach Days, Long Hikes, And</h5>
-                                    <p className="card-text ">Emma Mark • April 25, 2025</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-md-6">
-                        <div className="card blog-card border-0 p-0 overflow-hidden">
-                            <img
-                                src={blog3}
-                                className="card-img"
-                                alt="Blog 1"
-                            />
-                            <div className="card-img-overlay d-flex flex-column justify-content-end blog-overlay">
-                                <span>Read More</span>
-                                <div className="detail">
-                                    <h5 className="card-title fw-bold ">Island Hopping And Weather Tips</h5>
-                                    <p className="card-text ">Emma Mark • April 25, 2025</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-md-6">
-                        <div className="card blog-card border-0 overflow-hidden">
-                            <div className="blog-img">
-                                <img
-                                    src={blog2}
-                                    className="card-img"
-                                    alt="Blog 1"
-                                />
-                            </div>
-                            <div className="card-img-overlay d-flex flex-column justify-content-end blog-overlay">
-                                <span>Read More</span>
-                                <div className="detail">
-                                    <h5 className="card-title fw-bold ">Assertively iterate resource maximizing</h5>
-                                    <p className="card-text ">Emma Mark • April 25, 2025</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="text-center mt-4">
-                    <p>
-                        Want to see our top destinations?{" "}
-                        <a href="#" className="text-primary text-decoration-none">Click here to View More</a>
-                    </p>
-                </div>
-            </div>
-            {/* Footer   */}
-            <div className="container-fluid ">
-                <div className="row">
-                    <div className="col-12 col-md-8 ">
-                        <div className="row footer-head align-items-center px-3 px-md-5 py-4">
-                            <div className="col-12 col-md-6 mb-3 mb-md-0 footer-title section-title text-center text-md-start">
-                                <h2>Subscribe for latest update about Travelling</h2>
-                            </div>
-                            <div className="col-12 col-md-6">
-                                <div className="input-box d-flex flex-column ">
-                                    <input
-                                        type="email"
-                                        placeholder="Enter your Email"
-                                        className="form-control custom-input p-3 w-100"
-                                    />
-                                    <div className="btn-box mt-3">
-                                        <button className="btn custom-btn1 d-flex align-items-center w-100 w-md-auto">
-                                            Learn More
-                                            <img src={btnArrow} className="img-fluid ms-2" alt="Arrow icon" />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="row px-3 px-md-5 py-4">
-                            <div className="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
-                                <a href="#" className="logo text-dark fs-4 fw-bold d-block mb-2">FrostQuest</a>
-                                <p className="text-muted">
-                                    Go on a journey of unparalleled adventure with our travel agency, where every detail is curated to perfection, ensuring you not only explore the world but also create cherished memories.
-                                </p>
-                                <ul className="d-flex justify-content-center justify-content-md-start gap-3 list-unstyled social-icons mt-3">
-                                    <li><i className="ri-facebook-circle-fill fs-4"></i></li>
-                                    <li><i className="ri-youtube-fill fs-4"></i></li>
-                                    <li><i className="ri-instagram-fill fs-4"></i></li>
-                                    <li><i className="ri-linkedin-box-fill fs-4"></i></li>
-                                </ul>
-                            </div>
-
-
-                            <div className="col-12 col-md-6">
-                                <div className="row mt-4 mt-md-5 text-center text-md-start ">
-                                    <div className="col-12 col-md-4 mb-3 mb-md-0">
-                                        <ul className="footer-links  text-start">
-                                            <li><a href="#">About</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Login</a></li>
-                                            <li><a href="#">Flights</a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="col-12 col-md-4 mb-3 mb-md-0">
-                                        <ul className="footer-links  text-start">
-                                            <li><a href="#">Booking</a></li>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Hotels</a></li>
-                                            <li><a href="#">Teams</a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="col-12 col-md-4">
-                                        <ul className="footer-links  text-start">
-                                            <li><a href="#">Terms & Use</a></li>
-                                            <li><a href="#">Sitemap</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div className="col-12 col-md-4 mt-4 mt-md-0 px-3 px-md-0 text-center text-md-end">
-                        <img src={footer} alt="Traveling Updates" className="img-fluid" />
-                    </div>
-                </div>
-            </div>
-            {/* footer bottom */}
-            <div className="footer-bottom container-fluid  text-white bg-dark p-2 text-center">
-                <p className="mb-0 small">© 2025 <strong>Comodo</strong> — All Rights Reserved.</p>
-            </div>
+            {/* Footer */}
+            <Footer />
         </>
     )
 }
