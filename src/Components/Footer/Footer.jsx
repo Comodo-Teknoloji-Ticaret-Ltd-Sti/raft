@@ -12,29 +12,29 @@ function Footer() {
             <footer className="bg-light py-5  pb-0">
                 <div className="container">
                     <div className="row g-4">
-                        <h2 className="fw-bold mb-4">Quick Links:</h2>
+                        <h2 className="fw-bold mb-4">Hızlı Bağlantılar:</h2>
                         <div className="row g-3 w-100">
                             <div className="col-md-3">
-                                <p><i className="fas fa-check me-2"></i>Branding</p>
-                                <p><i className="fas fa-check me-2"></i>Recent Work</p>
-                                <p><i className="fas fa-check me-2"></i>Our history</p>
+                                <p><i className="fas fa-check me-2"></i>Rafting Turları</p>
+                                <p><i className="fas fa-check me-2"></i>ATV (Quad) Safari</p>
+                                <p><i className="fas fa-check me-2"></i>Balık Tutma Turları</p>
                             </div>
                             <div className="col-md-3">
-                                <p><i className="fas fa-check me-2"></i>Product Gallery</p>
-                                <p><i className="fas fa-check me-2"></i>Web & Interactive</p>
-                                <p><i className="fas fa-check me-2"></i>Help & support</p>
+                                <p><i className="fas fa-check me-2"></i>Buggy Safari</p>
+                                <p><i className="fas fa-check me-2"></i>Jeep Safari</p>
+                                <p><i className="fas fa-check me-2"></i>Lavanta Bahçeleri Gezisi</p>
                             </div>
                             <div className="col-md-3">
-                                <p><i className="fas fa-check me-2"></i>About us</p>
-                                <p><i className="fas fa-check me-2"></i>Branded Merchandise</p>
-                                <p><i className="fas fa-check me-2"></i>Our Awards</p>
+                                <p><i className="fas fa-check me-2"></i>Tazı Kanyonu Turu</p>
+                                <p><i className="fas fa-check me-2"></i>Macera Parkı</p>
+                                <p><i className="fas fa-check me-2"></i>Zipline Deneyimi</p>
                             </div>
                             <div className="footer-social col-md-3">
-                                <p><i className="fas fa-phone-alt me-2"></i>666 888 0000</p>
-                                <p><i className="fas fa-envelope me-2"></i>needhelp@gmail.com</p>
+                                <p><i className="fas fa-phone-alt me-2"></i>+90 533 153 02 29</p>
+                                <p><i className="fas fa-envelope me-2"></i>info@macerapark.com</p>
                                 <div className="mt-3 footer-icons">
                                     <a href="#" className="text-dark me-3"><i className="fab fa-facebook-f"></i></a>
-                                    <a href="#" className="text-dark me-3"><i className="fab fa-twitter"></i></a>
+                                    <a href="#" className="text-dark me-3"><i className="fab fa-instagram"></i></a>
                                     <a href="#" className="text-dark"><i className="fab fa-youtube"></i></a>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ function Footer() {
                     </div>
 
                     <div className="copyright text-center mt-4 py-3 border-top">
-                        <small>© Copyright 2024. All Rights Reserved.</small>
+                        <small></small>
                     </div>
                 </div>
             </footer>

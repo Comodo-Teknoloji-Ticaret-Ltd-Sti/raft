@@ -6,7 +6,7 @@ import 'swiper/css/effect-fade';
 import { Navigation, EffectFade } from 'swiper/modules';
 
 import btnArrow from '././../../assets/btn-arrow.svg'
-import plane from '././../../assets/plane.svg'
+import plane from '././../../assets/raftico.svg'
 
 
 // Data
@@ -26,10 +26,10 @@ import tst4 from './../../assets/tst-4.webp'
 import abEleement1 from './../../assets/about-element-1.webp'
 import abEleement2 from './../../assets/about-element-2.webp'
 import abEleement3 from './../../assets/about-element-3.webp'
-import DiscoverImg1 from './../../assets/Discover-image-1.webp'
-import DiscoverImg2 from './../../assets/Discover-image-2.webp'
-import DiscoverImg3 from './../../assets/Discover-image-3.webp'
-import DiscoverImg4 from './../../assets/Discover-image-4.webp'
+import DiscoverImg1 from './../../assets/Afis/adventure.png'
+import DiscoverImg2 from './../../assets/Afis/buggy.png'
+import DiscoverImg3 from './../../assets/Afis/fishing.png'
+import DiscoverImg4 from './../../assets/Afis/tazi.png'
 import steps1 from './../../assets/steps-1.svg'
 import steps2 from './../../assets/steps-2.svg'
 import steps3 from './../../assets/steps-3.svg'
@@ -71,31 +71,38 @@ function Index() {
             >
                 <SwiperSlide>
                     <div className="hero hero1 d-flex flex-column justify-content-center align-items-center">
-                        <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center">
-                            <h2 className='text-white'>Maceranın Doruğuna...</h2>
+                        <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className='text-white'>MC Raft</h1>
-                            <button className="btn text-white hero-btn mt-5">DAHA FAZLASI İÇİN<img src={btnArrow} className='img-fluid' alt="" /></button>
+                            <h2 className="text-white">Adrenalin Suyun İçinde!</h2>
+                            <p className="text-white fs-5">Serin sular, güçlü akıntılar ve eşsiz heyecan seni bekliyor.</p>
+                            <button className="btn text-white hero-btn mt-4">Keşfet <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className="hero hero2 d-flex flex-column justify-content-center align-items-center">
-                        <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center">
-                            <h2 className='text-white'>Maceranın Doruğuna...</h2>
+                        <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className='text-white'>MC Raft</h1>
-                            <button className="btn text-white hero-btn mt-5">DAHA FAZLASI İÇİN<img src={btnArrow} className='img-fluid' alt="" /></button>
+                            <h2 className="text-white">Tozu Dumana Kat!</h2>
+                            <p className="text-white fs-5">Engebeli arazilerde ATV ile unutulmaz bir maceraya çık.</p>
+                            <button className="btn text-white hero-btn mt-4">Tura Göz At <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                     <div className="hero hero3 d-flex flex-column justify-content-center align-items-center">
-                        <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center">
-                            <h2 className='text-white'>Maceranın Doruğuna...</h2>
+                        <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className='text-white'>MC Raft</h1>
-                            <button className="btn text-white hero-btn mt-5">DAHA FAZLASI İÇİN<img src={btnArrow} className='img-fluid' alt="" /></button>
+                            <h2 className="text-white">Doğanın Kalbindesin</h2>
+                            <p className="text-white fs-5">Tazı Kanyonu’nun nefes kesen manzarasıyla tanış.</p>
+                            <button className="btn text-white hero-btn mt-4">Detayları Gör <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
+
+
                 <i className="bi bi-arrow-left-short swiper-btn swiper-prev"></i>
                 <i className="bi bi-arrow-right-short swiper-btn swiper-next"></i>
             </Swiper>
@@ -110,12 +117,11 @@ function Index() {
                     <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
                         <span className=" d-flex align-items-center gap-2">
                             <img src={plane} alt="" className="img-fluid" />
-                            <span>Travel Destinantion</span>
+                            <span>Macera Noktaları</span>
                             <img src={plane} alt="" className="img-fluid" />
                         </span>
-                        <h2>Top Destinations</h2>
-                        <p>Explore our top destinations voted by more than 100,000+
-                            customers around the world.</p>
+                        <h2>Popüler Aktiviteler</h2>
+                        <p>En çok tercih edilen doğa ve adrenalin dolu deneyimleri keşfet.</p>
                     </div>
                 </motion.div>
                 <motion.div className="destinations-wrapper mt-5"
@@ -184,12 +190,11 @@ function Index() {
                     <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
                         <span className=" d-flex align-items-center gap-2">
                             <img src={plane} alt="" className="img-fluid" />
-                            <span>Travel Destinantion</span>
+                            <span>Aktivitelerimiz</span>
                             <img src={plane} alt="" className="img-fluid" />
                         </span>
-                        <h2>Discover the Touch of Nature</h2>
-                        <p>Our clients rave about our exceptional the seamless experiences
-                            that exceeded their expectations.</p>
+                        <h2>Doğanın Keyfini Çıkarın</h2>
+                        <p>Rafting, quad, balıkçılık, buggy, jeep safari, lavanta tarlaları, Tazı Kanyonu, macera parkı ve zipline ile doğada heyecan ve huzuru bir arada yaşayın.</p>
                     </div>
                 </motion.div>
                 <div className="row px-5 my-5 mx-0 gap-3 align-items-center justify-content-center">
@@ -201,8 +206,8 @@ function Index() {
                     >
                         <img src={DiscoverImg1} className='img-fluid' alt="" />
                         <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                            <span><i className="bi bi-geo-alt-fill"></i> Maldives</span>
-                            <h2 className='mt-4'>Beautiful tropical beach sea with umbrella chair around swimming pool</h2>
+                            <span><i className="bi bi-geo-alt-fill"></i> Adventure Park</span>
+                            <h2 className='mt-4'>Güvenli, kontrollü ve profesyonel rehber eşliğinde</h2>
                         </div>
                     </motion.div>
                     <motion.div className="col-lg-2 discover-card position-relative"
@@ -213,8 +218,8 @@ function Index() {
                     >
                         <img src={DiscoverImg2} className='img-fluid' alt="" />
                         <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                            <span><i className="bi bi-geo-alt-fill"></i> vietnam</span>
-                            <h2 className='mt-4'>Beautiful tropical beach sea with umbrella chair around swimming pool</h2>
+                            <span><i className="bi bi-geo-alt-fill"></i> Buggy</span>
+                            <h2 className='mt-4'> Doğanın kalbinde hızın, heyecanın ve adrenalinin zirvesine ulaş!</h2>
                         </div>
                     </motion.div>
                     <motion.div className="col-lg-2 discover-card position-relative"
@@ -225,8 +230,8 @@ function Index() {
                     >
                         <img src={DiscoverImg3} className='img-fluid' alt="" />
                         <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                            <span><i className="bi bi-geo-alt-fill"></i> Dubai</span>
-                            <h2 className='mt-4'>Beautiful tropical beach sea with umbrella chair around swimming pool</h2>
+                            <span><i className="bi bi-geo-alt-fill"></i> Fishing</span>
+                            <h2 className='mt-4'>Doğayla baş başa, keyifli ve sabır dolu bir balık tutma deneyimi seni bekliyor!</h2>
                         </div>
                     </motion.div>
                     <motion.div className="col-lg-2 discover-card position-relative"
@@ -237,8 +242,8 @@ function Index() {
                     >
                         <img src={DiscoverImg4} className='img-fluid' alt="" />
                         <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                            <span><i className="bi bi-geo-alt-fill"></i> Nepal</span>
-                            <h2 className='mt-4'>Beautiful tropical beach sea with umbrella chair around swimming pool</h2>
+                            <span><i className="bi bi-geo-alt-fill"></i> Tazi Kanyonu</span>
+                            <h2 className='mt-4'> mor renklere boyanmış bir doğa şöleni seni bekliyor.</h2>
                         </div>
                     </motion.div>
                 </div>
@@ -246,18 +251,18 @@ function Index() {
             {/* working Steps */}
             <div className="working py-5 position-relative">
                 <img src={FeatureImg1} className='FeatureImg FeatureImg1 img-fluid position-absolute' alt="" />
-                <img src={FeatureImg2} className='FeatureImg FeatureImg2 img-fluid position-absolute' alt="" />
+                {/* <img src={FeatureImg2} className='FeatureImg FeatureImg2 img-fluid position-absolute' alt="" /> */}
                 <div className="container">
                     <div className="row">
                         <div className="section-title discover-title">
                             <div className="text-start flex-column d-flex align-items-start justify-content-start gap-3">
                                 <span className=" d-flex align-items-center gap-2">
                                     <img src={plane} alt="" className="img-fluid" />
-                                    <span>working Steps</span>
+                                    <span>Nasıl Katılırım?</span>
                                     <img src={plane} alt="" className="img-fluid" />
                                 </span>
-                                <h2>Book Your Next Trip <br />
-                                    in 3 Steps</h2>
+                                <h2>3 Adımda<br />
+                                    Maceraya Katıl</h2>
                             </div>
                         </div>
                     </div>
@@ -267,8 +272,8 @@ function Index() {
                                 <img src={steps1} className='img-fluid' alt="" />
                             </div>
                             <div className="step-content">
-                                <h2>Choose Destination</h2>
-                                <p>Lobortis luctus neque duis lacinia volutp suspendisse pulvinar pen atibus malesu ada placerat..</p>
+                                <h2>Aktiviteni Seç</h2>
+                                <p>Rafting, zipline, quad safari, lavanta tarlası gezisi ve daha fazlası arasından dilediğini seç.</p>
                             </div>
                         </div>
                         <div className="col-lg-4 step-card rounded border p-4 d-flex flex-column gap-3">
@@ -276,8 +281,8 @@ function Index() {
                                 <img src={steps2} className='img-fluid' alt="" />
                             </div>
                             <div className="step-content">
-                                <h2>Make Payment</h2>
-                                <p>Lobortis luctus neque duis lacinia volutp suspendisse pulvinar pen atibus malesu ada placerat..</p>
+                                <h2>Kolayca Rezervasyon Yap</h2>
+                                <p>Müşteri hizmetlerimiz veya WhatsApp üzerinden hızlı ve güvenli bir şekilde rezervasyonunu tamamla.</p>
                             </div>
                         </div>
                         <div className="col-lg-4 step-card rounded border p-4 d-flex flex-column gap-3">
@@ -285,8 +290,8 @@ function Index() {
                                 <img src={steps3} className='img-fluid' alt="" />
                             </div>
                             <div className="step-content">
-                                <h2>Reach Airport on Date</h2>
-                                <p>Lobortis luctus neque duis lacinia volutp suspendisse pulvinar pen atibus malesu ada placerat..</p>
+                                <h2>Belirtilen Noktada Hazır Ol</h2>
+                                <p>Belirlenen saatte buluşma noktasında ol, macera dolu bir gün seni bekliyor!</p>
                             </div>
                         </div>
                     </div>
@@ -300,12 +305,11 @@ function Index() {
                     <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
                         <span className=" d-flex align-items-center gap-2">
                             <img src={plane} alt="" className="img-fluid" />
-                            <span>Testimonials</span>
+                            <span>Misafir Yorumları</span>
                             <img src={plane} alt="" className="img-fluid" />
                         </span>
-                        <h2>What’s Our Clients Saying!</h2>
-                        <p>Our clients rave about our exceptional the seamless experiences
-                            that exceeded their expectations.</p>
+                        <h2>Misafirlerimiz Ne Diyor?</h2>
+                        <p>Etkinliklerimize katılan misafirlerimiz, doğayla iç içe, heyecan dolu ve unutulmaz anılarla dolu bir gün geçirdiklerini söylüyorlar. İşte bazı yorumlar;</p>
                     </div>
                 </div>
                 <div className="container mt-5">
@@ -326,7 +330,8 @@ function Index() {
                                     <div className="col-lg-6">
                                         <div className="test-content">
                                             <img src={quote} className='img-fluid test-content-img' alt="" />
-                                            <p className='test-pere'>"Booking with this travel agency was a game changer their meticulous planning and personalized approach made our trip not just a vacation but a collection of unforgettable moments. From seamless logistics to hidden gems, they turned our travel dreams into a reality, earning our trust and loyalty."</p>
+                                            <p className='test-pere'>"Bu acenta sayesinde sadece bir gün değil, hayat boyu unutamayacağımız anılar biriktirdik. Jeep safari ve zipline inanılmazdı! Organizasyon kusursuzdu, ekip çok ilgiliydi. Tüm arkadaşlarımıza tavsiye ediyoruz."</p>
+
                                             <div className="test-stars">
                                                 <i className="bi bi-star-fill"></i>
                                                 <i className="bi bi-star-fill"></i>
@@ -337,8 +342,8 @@ function Index() {
                                             <div className="test-user mt-3 d-flex align-items-center gap-2">
                                                 <img src={tstimg2} className='img-fluid' alt="" />
                                                 <div className="test-user-info">
-                                                    <h3>TASHA STEWART</h3>
-                                                    <p className='m-0'>Web Developer at ThemeXriver</p>
+                                                    <h3>FURKAN AYAKDAŞ</h3>
+                                                    <p className='m-0'>Antalya / Türkiye</p>
                                                 </div>
                                             </div>
                                         </div>

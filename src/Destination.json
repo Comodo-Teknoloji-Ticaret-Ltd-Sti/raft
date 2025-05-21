@@ -1,47 +1,83 @@
 [
     {
         "id": 1,
-        "name": "Canada, Gananoque Islands",
-        "image": "Images/Destination-image-1.webp",
-        "days": "7 Days",
-        "price":"$11000",
-        "location":"Canada",
-        "pere": "Far far away, behind the word mountain far from the countries .."
+        "name": "Rafting Macerası",
+        "image": "src/assets/MaceraNoktalari/rafting.JPG",
+        "days": "Her gün 3 seans",
+        "price": "₺800",
+        "location": "Köprülü Kanyon",
+        "pere": "Adrenalin dolu dalgalarla mücadele edin, doğanın gücünü hissedin."
     },
     {
         "id": 2,
-        "name": "France Eiffel Tower",
-        "image": "Images/Destination-image-2.webp",
-        "days": "7 Days",
-        "price":"$15000",
-        "location":"France",
-        "pere": "Far far away, behind the word mountain far from the countries .."
+        "name": "Quad (ATV) Safari",
+        "image": "src/assets/MaceraNoktalari/buggy.jpg",
+        "days": "09:00 - 18:00 arası",
+        "price": "₺600",
+        "location": "Beşkonak Orman Yolu",
+        "pere": "Tozlu patikalarda hız ve özgürlüğün tadını çıkarın."
     },
     {
         "id": 3,
-        "name": "South Africa, Places",
-        "image": "Images/Destination-image-3.webp",
-        "days": "7 Days",
-        "price":"$19000",
-        "location":"New York",
-        "pere": "Far far away, behind the word mountain far from the countries .."
+        "name": "Balık Tutma Keyfi",
+        "image": "src/assets/MaceraNoktalari/fishing.jpg",
+        "days": "Sabah & Akşam Seansları",
+        "price": "₺400",
+        "location": "Göl Kenarı",
+        "pere": "Sakin ve huzurlu anlarda doğayla baş başa balık tutmanın keyfi."
     },
     {
         "id": 4,
-        "name": "United Arab Emirates Desert,   ",
-        "image": "Images/Destination-image-4.webp",
-        "days": "7 Days",
-        "price":"$19000",
-        "location":"Emirates",
-        "pere": "Far far away, behind the word mountain far from the countries .."
+        "name": "Buggy Turları",
+        "image": "src/assets/MaceraNoktalari/buggy.jpg",
+        "days": "Gün boyu turlar",
+        "price": "₺650",
+        "location": "Off-road Parkuru",
+        "pere": "Zorlu arazi şartlarında eğlenceli ve heyecanlı buggy deneyimi."
     },
     {
         "id": 5,
-        "name": "Paradise, Places,   ",
-        "image": "Images/Destination-image-5.webp",
-        "days": "7 Days",
-        "price":"$35000",
-        "location":"London",
-        "pere": "Far far away, behind the word mountain far from the countries .."
+        "name": "Jeep Safari",
+        "image": "src/assets/MaceraNoktalari/jeepsafari.jpg",
+        "days": "Sabah ve Öğlen Turları",
+        "price": "₺700",
+        "location": "Doğa Parkuru",
+        "pere": "Keşfedilmemiş rotalarda jeep ile maceraya atılın."
+    },
+    {
+        "id": 6,
+        "name": "Lavanta Bahçeleri Gezisi",
+        "image": "src/assets/MaceraNoktalari/lavander.jpg",
+        "days": "Sabah ve Öğleden sonra",
+        "price": "₺300",
+        "location": "Lavanta Vadisi",
+        "pere": "Mis gibi lavanta kokuları eşliğinde huzur dolu bir gün."
+    },
+    {
+        "id": 7,
+        "name": "Tazı Kanyonu Turu",
+        "image": "src/assets/MaceraNoktalari/tazikanyon.jpg",
+        "days": "Sabah ve Öğlen Seansları",
+        "price": "₺500",
+        "location": "Tazı Kanyonu",
+        "pere": "Doğanın kalbinde, muhteşem manzaralar eşliğinde yürüyüş deneyimi."
+    },
+    {
+        "id": 8,
+        "name": "Macera Parkı",
+        "image": "src/assets/MaceraNoktalari/maceraparki.jpg",
+        "days": "09:00 - 19:00 arası",
+        "price": "₺450",
+        "location": "Macera Vadisi",
+        "pere": "Zipline, tırmanma ve daha fazlası ile dolu dolu eğlence."
+    },
+    {
+        "id": 9,
+        "name": "Zipline Deneyimi",
+        "image": "src/assets/MaceraNoktalari/maceraparki.jpg",
+        "days": "Sabah ve Öğleden sonra",
+        "price": "₺400",
+        "location": "Macera Vadisi",
+        "pere": "Gökyüzünde süzülürken adrenalin ve özgürlüğü yaşayın."
     }
 ]
