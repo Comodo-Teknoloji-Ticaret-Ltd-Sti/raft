@@ -115,12 +115,12 @@ function Index() {
                     viewport={{ once: false, amount: 0.3 }}
                 >
                     <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
-                        <span className=" d-flex align-items-center gap-2">
-                            <img src={plane} alt="" className="img-fluid" />
-                            <span>Macera Noktaları</span>
-                            <img src={plane} alt="" className="img-fluid" />
-                        </span>
-                        <h2>Popüler Aktiviteler</h2>
+                        <span>Macera Noktaları</span>
+                        <div className=" d-flex align-items-center gap-2">
+                            <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
+                            <h2>Popüler Aktiviteler</h2>
+                            <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
+                        </div>
                         <p>En çok tercih edilen doğa ve adrenalin dolu deneyimleri keşfet.</p>
                     </div>
                 </motion.div>
@@ -188,12 +188,12 @@ function Index() {
                     viewport={{ once: false, amount: 0.3 }}
                 >
                     <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
-                        <span className=" d-flex align-items-center gap-2">
-                            <img src={plane} alt="" className="img-fluid" />
-                            <span>Aktivitelerimiz</span>
-                            <img src={plane} alt="" className="img-fluid" />
-                        </span>
-                        <h2>Doğanın Keyfini Çıkarın</h2>
+                        <span>Aktivitelerimiz</span>
+                        <div className=" d-flex align-items-center gap-2">
+                            <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
+                            <h2>Doğanın Keyfini Çıkarın</h2>
+                            <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
+                        </div>
                         <p>Rafting, quad, balıkçılık, buggy, jeep safari, lavanta tarlaları, Tazı Kanyonu, macera parkı ve zipline ile doğada heyecan ve huzuru bir arada yaşayın.</p>
                     </div>
                 </motion.div>
@@ -256,13 +256,13 @@ function Index() {
                     <div className="row">
                         <div className="section-title discover-title">
                             <div className="text-start flex-column d-flex align-items-start justify-content-start gap-3">
-                                <span className=" d-flex align-items-center gap-2">
-                                    <img src={plane} alt="" className="img-fluid" />
-                                    <span>Nasıl Katılırım?</span>
-                                    <img src={plane} alt="" className="img-fluid" />
-                                </span>
-                                <h2>3 Adımda<br />
-                                    Maceraya Katıl</h2>
+                                <span>Nasıl Katılırım?</span>
+                                <div className=" d-flex align-items-center gap-2">
+                                    <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
+                                    <h2>3 Adımda<br />
+                                        Maceraya Katıl</h2>
+                                    <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -303,12 +303,12 @@ function Index() {
                 <img src={testBG} className='img-fluid test-bg-img2 position-absolute' alt="" />
                 <div className="section-title test-title">
                     <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
-                        <span className=" d-flex align-items-center gap-2">
-                            <img src={plane} alt="" className="img-fluid" />
-                            <span>Misafir Yorumları</span>
-                            <img src={plane} alt="" className="img-fluid" />
-                        </span>
-                        <h2>Misafirlerimiz Ne Diyor?</h2>
+                        <span>Misafir Yorumları</span>
+                        <div className=" d-flex align-items-center gap-2">
+                            <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
+                            <h2>Misafirlerimiz Ne Diyor?</h2>
+                            <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
+                        </div>
                         <p>Etkinliklerimize katılan misafirlerimiz, doğayla iç içe, heyecan dolu ve unutulmaz anılarla dolu bir gün geçirdiklerini söylüyorlar. İşte bazı yorumlar;</p>
                     </div>
                 </div>
@@ -330,7 +330,7 @@ function Index() {
                                     <div className="col-lg-6">
                                         <div className="test-content">
                                             <img src={quote} className='img-fluid test-content-img' alt="" />
-                                            <p className='test-pere'>"Bu acenta sayesinde sadece bir gün değil, hayat boyu unutamayacağımız anılar biriktirdik. Jeep safari ve zipline inanılmazdı! Organizasyon kusursuzdu, ekip çok ilgiliydi. Tüm arkadaşlarımıza tavsiye ediyoruz."</p>
+                                            <p className='test-pere'>"MC Raft sayesinde sadece bir gün değil, hayat boyu unutamayacağımız anılar biriktirdik. Jeep safari ve zipline inanılmazdı! Organizasyon kusursuzdu, ekip çok ilgiliydi. Tüm arkadaşlarımıza tavsiye ediyoruz."</p>
 
                                             <div className="test-stars">
                                                 <i className="bi bi-star-fill"></i>
