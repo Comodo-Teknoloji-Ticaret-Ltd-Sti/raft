@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Rafting Macerası",
-        "image": "src/assets/MaceraNoktalari/rafting.JPG",
+        "image": "Images/rafting.JPG",
         "days": "Her gün 3 seans",
         "price": "₺800",
         "location": "Köprülü Kanyon",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "Quad (ATV) Safari",
-        "image": "src/assets/MaceraNoktalari/buggy.jpg",
+        "image": "Images/buggy.jpg",
         "days": "09:00 - 18:00 arası",
         "price": "₺600",
         "location": "Beşkonak Orman Yolu",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "name": "Balık Tutma Keyfi",
-        "image": "src/assets/MaceraNoktalari/fishing.jpg",
+        "image": "Images/fishing.jpg",
         "days": "Sabah & Akşam Seansları",
         "price": "₺400",
         "location": "Göl Kenarı",
@@ -29,7 +29,7 @@
     {
         "id": 4,
         "name": "Buggy Turları",
-        "image": "src/assets/MaceraNoktalari/buggy.jpg",
+        "image": "Images/buggy.jpg",
         "days": "Gün boyu turlar",
         "price": "₺650",
         "location": "Off-road Parkuru",
@@ -38,7 +38,7 @@
     {
         "id": 5,
         "name": "Jeep Safari",
-        "image": "src/assets/MaceraNoktalari/jeepsafari.jpg",
+        "image": "Images/jeepsafari.jpg",
         "days": "Sabah ve Öğlen Turları",
         "price": "₺700",
         "location": "Doğa Parkuru",
@@ -47,7 +47,7 @@
     {
         "id": 6,
         "name": "Lavanta Bahçeleri Gezisi",
-        "image": "src/assets/MaceraNoktalari/lavander.jpg",
+        "image": "Images/lavander.jpg",
         "days": "Sabah ve Öğleden sonra",
         "price": "₺300",
         "location": "Lavanta Vadisi",
@@ -56,7 +56,7 @@
     {
         "id": 7,
         "name": "Tazı Kanyonu Turu",
-        "image": "src/assets/MaceraNoktalari/tazikanyon.jpg",
+        "image": "Images/tazikanyon.jpg",
         "days": "Sabah ve Öğlen Seansları",
         "price": "₺500",
         "location": "Tazı Kanyonu",
@@ -65,7 +65,7 @@
     {
         "id": 8,
         "name": "Macera Parkı",
-        "image": "src/assets/MaceraNoktalari/maceraparki.jpg",
+        "image": "Images/maceraparki.jpg",
         "days": "09:00 - 19:00 arası",
         "price": "₺450",
         "location": "Macera Vadisi",
@@ -74,7 +74,7 @@
     {
         "id": 9,
         "name": "Zipline Deneyimi",
-        "image": "src/assets/MaceraNoktalari/maceraparki.jpg",
+        "image": "Images/maceraparki.jpg",
         "days": "Sabah ve Öğleden sonra",
         "price": "₺400",
         "location": "Macera Vadisi",
