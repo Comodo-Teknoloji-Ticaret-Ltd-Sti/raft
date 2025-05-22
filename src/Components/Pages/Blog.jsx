@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 import blogAuthor from './../../assets/blog-author.jpeg';
-import blog1 from './../../assets/blog1.webp';
-import blog2 from './../../assets/blog2.webp';
-import blog3 from './../../assets/blog3.webp';
-import blog4 from './../../assets/blog4.webp';
-import blog5 from './../../assets/blog5.webp';
+import blog1 from './../../assets/buggy_1.jpg';
+import blog2 from './../../assets/fishing_1.jpg';
+import blog3 from './../../assets/hiking_1.jpg';
+import blog4 from './../../assets/nature_1.jpg';
+import blog5 from './../../assets/fishing_2.jpg';
 
 import galleryimage1 from '../../assets/gallery-image1.webp';
 import galleryimage2 from '../../assets/gallery-image2.webp';
@@ -23,36 +23,36 @@ function Blog() {
         {
             id: 1,
             image: blog1,
-            title: "Island Hopping And Weather Tips",
+            title: "Buggy Turu: Maceranın ve Özgürlüğün Tadını Çıkarın!",
             category: "Adrenalin",
-            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
+            description: "Doğanın kalbinde, tozlu yollar ve engebeli arazilerde buggy turu ile unutulmaz bir maceraya hazır mısınız? Adrenalin dolu bu deneyimde, özgürlüğü ve heyecanı bir arada yaşayacak, eşsiz manzaralar eşliğinde yolculuğun keyfini süreceksiniz!"
         },
         {
             id: 2,
             image: blog2,
-            title: "Beach Days, Long Hikes, And",
-            category: "Doğa",
-            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
+            title: "Balıkçılık: Oltalar Hazır Mı?",
+            category: "Hobi",
+            description: "Göl kenarında huzurlu bir atmosferde, sevdiklerinizle birlikte balık tutmaya ne dersiniz?. Doğanın sakinliği ve suyun dinginliğiyle, hayatın stresinden uzaklaşarak unutulmaz anılar biriktirin!"
         },
         {
             id: 3,
             image: blog3,
             title: "Experience the World with Our Travel Company",
-            category: "Hobi",
+            category: "Doğa",
             description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
         },
         {
             id: 4,
             image: blog4,
-            title: "Experience the World with Our Travel Company",
+            title: "Lavanta Bahçesi Turu: Doğanın Renkleri ve Huzuru",
             category: "Doğa",
-            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
+            description: "Mis kokulu lavanta tarlalarında yürüyüş yaparak doğanın huzurunu keşfedin. Morun en güzel tonları arasında keyifli anlar yaşarken, fotoğraf çekmeyi ve bu özel atmosferin tadını çıkarmayı unutmayın."
         },
         {
             id: 5,
             image: blog5,
             title: "Assertively iterate resource maximizing",
-            category: "Adrenalin",
+            category: "Hobi",
             description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
         }
     ];
