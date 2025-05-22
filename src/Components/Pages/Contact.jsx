@@ -7,14 +7,14 @@ function Contact() {
             <div className="section-banner w-100">
                 <div className="container">
                     <div className="section-banner-content">
-                        <h2>Contact</h2>
+                        <h2>İletişim</h2>
                         <ul>
                             <li>
-                                <Link to="/">Home</Link> &nbsp;
+                                <Link to="/">Anasayfa</Link> &nbsp;
                             </li>
                             <li>
                                 <i className="bi bi-gear fs-6 pe-2"></i>
-                                Contact
+                                İletişim
                             </li>
                         </ul>
                     </div>
@@ -25,7 +25,7 @@ function Contact() {
                 <div className="container">
                     <div className="section-title contact-title">
                         <h2 className="fw-bold ">
-                            Get in touch with our <br /> lovely Team
+                            Bizimle <br /> İletişime Geçin!
                         </h2>
                     </div>
                     <div className="row g-5">
@@ -35,9 +35,9 @@ function Contact() {
                                     <i className="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div className="info-text">
-                                    <h5>Office Address</h5>
-                                    <p className="mb-0">Travel Agency Network 20</p>
-                                    <p>Eastbourne Terrace, London W2 6LG</p>
+                                    <h5>Adres</h5>
+                                    <p className="mb-0">Akyaka Sk. 70/1, 07550 Antalya, Manavgat Türkiye</p>
+                                    <p>MC RIVER PARK OUTDOOR (MC RAFT)</p>
                                 </div>
                             </div>
                             <div className="info-block d-flex">
@@ -45,9 +45,9 @@ function Contact() {
                                     <i className="fas fa-phone-alt"></i>
                                 </div>
                                 <div className="info-text">
-                                    <h5>Phone Number</h5>
-                                    <p className="mb-0">(408) 8542–389-5470</p>
-                                    <p>(408) 8542–389-5470</p>
+                                    <h5>Telefon Numarası</h5>
+                                    <p className="mb-0">(+90) 533 153 02 29</p>
+                                    <p>(0500) 111-1111</p>
                                 </div>
                             </div>
                             <div className="info-block d-flex">
@@ -55,9 +55,9 @@ function Contact() {
                                     <i className="fas fa-envelope"></i>
                                 </div>
                                 <div className="info-text">
-                                    <h5>Mail Address</h5>
-                                    <p className="mb-0">info@envato.com</p>
-                                    <p>support@envato.com</p>
+                                    <h5>Mail Adresi</h5>
+                                    <p className="mb-0">info@macerapark.com</p>
+                                    <p>support@macerapark.com</p>
                                 </div>
                             </div>
                         </div>                        <div className="col-lg-6">

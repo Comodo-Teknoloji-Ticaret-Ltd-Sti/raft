@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -17,224 +17,153 @@ import galleryimage4 from '../../assets/gallery-image4.webp';
 import galleryimage5 from '../../assets/gallery-image5.webp';
 
 function Blog() {
+    const [selectedCategory, setSelectedCategory] = useState('all');
+    
+    const blogData = [
+        {
+            id: 1,
+            image: blog1,
+            title: "Island Hopping And Weather Tips",
+            category: "Adrenalin",
+            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
+        },
+        {
+            id: 2,
+            image: blog2,
+            title: "Beach Days, Long Hikes, And",
+            category: "Doğa",
+            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
+        },
+        {
+            id: 3,
+            image: blog3,
+            title: "Experience the World with Our Travel Company",
+            category: "Hobi",
+            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
+        },
+        {
+            id: 4,
+            image: blog4,
+            title: "Experience the World with Our Travel Company",
+            category: "Doğa",
+            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
+        },
+        {
+            id: 5,
+            image: blog5,
+            title: "Assertively iterate resource maximizing",
+            category: "Adrenalin",
+            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
+        }
+    ];
+
+    const filterByCategory = (category) => {
+        setSelectedCategory(category);
+    };
+
+    const filteredBlogs = selectedCategory === 'all' 
+        ? blogData 
+        : blogData.filter(blog => blog.category === selectedCategory);
+
+    const categories = [
+        { name: "Adrenalin", count: blogData.filter(blog => blog.category === "Adrenalin").length },
+        { name: "Doğa", count: blogData.filter(blog => blog.category === "Doğa").length },
+        { name: "Hobi", count: blogData.filter(blog => blog.category === "Hobi").length },
+    ];
+
     return (
         <>
             {/* Page Section */}
             <div className="section-banner w-100">
                 <div className="container">
                     <div className="section-banner-content">
-                        <h2>Blog</h2>
+                        <h2>Aktiviteler</h2>
                         <ul>
                             <li>
-                                <Link to="/">Home</Link> &nbsp;
+                                <Link to="/">Anasayfa</Link> &nbsp;
                             </li>
                             <li>
                                 <i className="bi bi-gear fs-6 pe-2"></i>
-                                Blog
+                                Aktiviteler
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <section className="blog py-5">
-                <div className="container">
-                    <div className="row g-4 blog-page">
-                        <div className="col-lg-8">
-                            <div className="col-lg-12">
-                                <div className="blog-card mb-4 shadow">
-                                    <img src={blog1} className="card-img-top img-fluid" alt="Blog Image" />
-                                    <div className="blog-card-body p-4">
-                                        <div className="d-flex align-items-center justify-content-between mb-3">
-                                            <div className="blog-img mt-4">
-                                                <img src={blogAuthor} className="me-3" alt="Author" />
+                <div className="container">                    <div className="row g-4 blog-page">
+                        <div className="col-12 mb-4">
+                            <div className="categories-card border-0 p-3 bg-light rounded">
+                                <h5 className="fw-bold mb-3">Kategoriler</h5>
+                                <ul className="list-group list-group-horizontal flex-wrap">
+                                    {categories.map(category => (
+                                        <li
+                                            key={category.name}
+                                            className={`list-group-item border me-2 mb-2 rounded ${selectedCategory === category.name ? 'bg-primary text-white' : 'bg-white'}`}
+                                            onClick={() => filterByCategory(category.name)}
+                                            style={{ cursor: 'pointer' }}
+                                        >
+                                            <div className="d-flex align-items-center">
+                                                <i className="bi bi-asterisk me-2"></i>
+                                                <span>{category.name}</span>
+                                                <span className="ms-2 badge bg-secondary">{category.count}</span>
                                             </div>
-                                        </div>
-                                        <h3 className="card-title fw-bold mb-3">Island Hopping And Weather Tips</h3>
-                                        <p className="card-text mb-3">
-                                            Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem
-                                            elit. Ante porta accumsan sociosqu faucibus ultrices posuere. Vivamus id efficitur
-                                            tristique hac elit egestas Sed efficitur fringilla habitant tempus tincidunt facilisis
-                                            auctor pellentes sem.
-                                        </p>
-                                        <a>
-                                            Explore More <i className="bi bi-arrow-up-right ms-3"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="blog-card mb-4 shadow">
-                                    <img src={blog2} className="card-img-top" alt="Blog Image" />
-                                    <div className="blog-card-body p-4">
-                                        <div className="d-flex align-items-center justify-content-between mb-3">
-                                            <div className="blog-img mt-4">
-                                                <img src={blogAuthor} className="me-3" alt="Author" />
-                                            </div>
-                                        </div>
-                                        <h3 className="card-title fw-bold mb-3">Beach Days, Long Hikes, And</h3>
-                                        <p className="card-text mb-3">
-                                            Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem
-                                            elit. Ante porta accumsan sociosqu faucibus ultrices posuere. Vivamus id efficitur
-                                            tristique hac elit egestas Sed efficitur fringilla habitant tempus tincidunt facilisis
-                                            auctor pellentes sem.
-                                        </p>
-                                        <a>
-                                            Explore More <i className="bi bi-arrow-up-right ms-3"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="blog-card mb-4 shadow">
-                                    <img src={blog3} className="card-img-top" alt="Blog Image" />
-                                    <div className="blog-card-body p-4">
-                                        <div className="d-flex align-items-center justify-content-between mb-3">
-                                            <div className="blog-img mt-4">
-                                                <img src={blogAuthor} className="me-3" alt="Author" />
-                                            </div>
-                                        </div>
-                                        <h3 className="card-title fw-bold mb-3">Experience the World with Our Travel Company</h3>
-                                        <p className="card-text mb-3">
-                                            Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem
-                                            elit. Ante porta accumsan sociosqu faucibus ultrices posuere. Vivamus id efficitur
-                                            tristique hac elit egestas Sed efficitur fringilla habitant tempus tincidunt facilisis
-                                            auctor pellentes sem.
-                                        </p>
-                                        <a>
-                                            Explore More <i className="bi bi-arrow-up-right ms-3"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="blog-card mb-4 shadow">
-                                    <img src={blog4} className="card-img-top" alt="Blog Image" />
-                                    <div className="blog-card-body p-4">
-                                        <div className="d-flex align-items-center justify-content-between mb-3">
-                                            <div className="blog-img mt-4">
-                                                <img src={blogAuthor} className="me-3" alt="Author" />
-                                            </div>
-                                        </div>
-                                        <h3 className="card-title fw-bold mb-3">Experience the World with Our Travel Company</h3>
-                                        <p className="card-text mb-3">
-                                            Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem
-                                            elit. Ante porta accumsan sociosqu faucibus ultrices posuere. Vivamus id efficitur
-                                            tristique hac elit egestas Sed efficitur fringilla habitant tempus tincidunt facilisis
-                                            auctor pellentes sem.
-                                        </p>
-                                        <a>
-                                            Explore More <i className="bi bi-arrow-up-right ms-3"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-12">
-                                <div className="blog-card mb-4 shadow">
-                                    <img src={blog5} className="card-img-top"
-                                        alt="Blog Image" />
-                                    <div className="blog-card-body p-4">
-                                        <div className="d-flex align-items-center justify-content-between mb-3">
-                                            <div className="blog-img mt-4">
-                                                <img src={blogAuthor} className="me-3" alt="Author" />
-                                            </div>
-                                        </div>
-                                        <h3 className="card-title fw-bold mb-3">Assertively iterate resource maximizing</h3>
-                                        <p className="card-text mb-3">
-                                            Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem
-                                            elit. Ante porta accumsan sociosqu faucibus ultrices posuere. Vivamus id efficitur
-                                            tristique hac elit egestas Sed efficitur fringilla habitant tempus tincidunt facilisis
-                                            auctor pellentes sem.
-                                        </p>
-                                        <a>
-                                            Explore More <i className="bi bi-arrow-up-right ms-3"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className="details mb-4">
-                                <h4>Search</h4>
-                                <div className="input-group">
-                                    <input type="search" className="form-control" placeholder="Search..." />
-                                    <button className="btn" type="button"><i className="bi bi-search"></i></button>
-                                </div>
-                            </div>
-                            <div className="categories-card border-0 ">
-                                <h5 className="fw-bold mb-3">Categories</h5>
-                                <ul className="list-group mb-0">
-                                    <li className="d-flex justify-content-between align-items-center py-2 border-top">
+                                        </li>
+                                    ))}
+                                    <li
+                                        className={`list-group-item border me-2 mb-2 rounded ${selectedCategory === 'all' ? 'bg-primary text-white' : 'bg-white'}`}
+                                        onClick={() => filterByCategory('all')}
+                                        style={{ cursor: 'pointer' }}
+                                    >
                                         <div className="d-flex align-items-center">
                                             <i className="bi bi-asterisk me-2"></i>
-                                            <a href="#" className="text-decoration-none">Adventure</a>
+                                            <span>Tümü</span>
+                                            <span className="ms-2 badge bg-secondary">{blogData.length}</span>
                                         </div>
-                                        <span>2</span>
-                                    </li>
-                                    <li className="d-flex justify-content-between align-items-center py-2 border-top">
-                                        <div className="d-flex align-items-center">
-                                            <i className="bi bi-asterisk me-2"></i>
-                                            <a href="#" className="text-decoration-none">City Tours</a>
-                                        </div>
-                                        <span>4</span>
-                                    </li>
-                                    <li className="d-flex justify-content-between align-items-center py-2 border-top">
-                                        <div className="d-flex align-items-center">
-                                            <i className="bi bi-asterisk me-2"></i>
-                                            <a href="#" className="text-decoration-none">Cruises Tour</a>
-                                        </div>
-                                        <span>3</span>
-                                    </li>
-                                    <li className="d-flex justify-content-between align-items-center py-2 border-top">
-                                        <div className="d-flex align-items-center">
-                                            <i className="bi bi-asterisk me-2"></i>
-                                            <a href="#" className="text-decoration-none">Sea Tour</a>
-                                        </div>
-                                        <span>2</span>
                                     </li>
                                 </ul>
                             </div>
-                            <div className="recent-card">
+                        </div>
+                        <div className="col-lg-8">
+                            {filteredBlogs.map(blog => (
+                                <div className="col-lg-12" key={blog.id}>
+                                    <div className="blog-card mb-4 shadow">
+                                        <img src={blog.image} className="card-img-top img-fluid" alt="Blog Image" />
+                                        <div className="blog-card-body p-4">
+                                            <div className="d-flex align-items-center justify-content-between mb-3">
+                                                <div className="blog-img mt-4">
+                                                    <img src={blogAuthor} className="me-3" alt="Author" />
+                                                </div>
+                                            </div>
+                                            <h3 className="card-title fw-bold mb-3">{blog.title}</h3>                                            
+                                            <p className="card-text mb-3">{blog.description}</p>
+                                            <a style={{ cursor: 'pointer' }}>
+                                                {blog.category} <i className="bi bi-tag-fill ms-2"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="col-lg-4">                            <div className="recent-card">
                                 <h4>Recent Post</h4>
-                                <div className="d-flex mb-4">
-                                    <img src={blog1} className="me-3 img-fluid" alt="Post Image" />
-                                    <div>
-                                        <small className="d-block"><i className="bi bi-calendar2-week me-1"></i> May 11,
-                                            2024</small>
-                                        <p className="text-decoration-none">Island Hopping And Weather Tips</p>
+                                {blogData.slice(0, 4).map(blog => (
+                                    <div className="d-flex mb-4" key={blog.id}>
+                                        <img src={blog.image} className="me-3 img-fluid" alt="Post Image" />
+                                        <div>
+                                            <small className="d-block">
+                                                <i className="bi bi-calendar2-week me-1"></i> May 11, 2024
+                                            </small>
+                                            <p className="text-decoration-none">{blog.title}</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="d-flex mb-4">
-                                    <img src={blog2} className="me-3" alt="Post Image" />
-                                    <div>
-                                        <small className="d-block"><i className="bi bi-calendar2-week me-1"></i> May 11,
-                                            2024</small>
-                                        <p className="text-decoration-none">Beach Days, Long Hikes, And</p>
-                                    </div>
-                                </div>
-                                <div className="d-flex mb-4">
-                                    <img src={blog3} className="me-3" alt="Post Image" />
-                                    <div>
-                                        <small className="d-block"><i className="bi bi-calendar2-week me-1"></i> May 11,
-                                            2024</small>
-                                        <p href="#" className="text-decoration-none">Experience the World with Our Travel Company
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="d-flex">
-                                    <img src={blog4} className="me-3" alt="Post Image" />
-                                    <div>
-                                        <small className="d-block"><i className="bi bi-calendar2-week me-1"></i> May 11,
-                                            2024</small>
-                                        <p href="#" className="text-decoration-none">Experience the World with Our Travel Company
-                                        </p>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
                 </div>
             </section >
-
+            
             {/* gallery section */}
             <section className="gallery-grid my-5 mb-0">
                 <div className="row">
