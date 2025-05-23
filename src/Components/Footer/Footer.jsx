@@ -1,10 +1,10 @@
 import React from 'react'
 
-import ins1 from '../../assets/ins1.webp'
-import ins2 from '../../assets/ins2.webp'
-import ins3 from '../../assets/ins3.webp'
-import ins4 from '../../assets/ins4.webp'
-import ins5 from '../../assets/ins5.webp'
+import ins1 from '../../assets/Footer/buggy.jpg'
+import ins2 from '../../assets/Footer/fishing.jpg'
+import ins3 from '../../assets/Footer/lavender.jpg'
+import ins4 from '../../assets/Footer/rafting.jpg'
+import ins5 from '../../assets/Footer/zipline.jpg'
 
 function Footer() {
     return (
@@ -40,7 +40,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="row mt-5">
+                    {/* <div className="row mt-5">
                         <div className="col">
                             <div className="footer-img d-flex flex-wrap justify-content-center gap-3">
                                 <div className="img-wrapper">
@@ -60,7 +60,7 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="copyright text-center mt-4 py-3 border-top">
                         <small></small>
