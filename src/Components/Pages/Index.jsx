@@ -156,25 +156,30 @@ function Index() {
                         extensions={{ AutoScroll }}
                     >
                         <SplideTrack>
-                            {Destination.map(dest => (
-                                <SplideSlide key={dest.id}>
-                                    <div className="dest-card position-relative">
-                                        <div className="dest-img overflow-hidden rounded">
-                                            <img src={dest.image} className='img-fluid' alt={dest.name} />
-                                            <span className="dest-price position-absolute top-0 end-0">{dest.price}</span>
-                                        </div>
-                                        <div className="dest-content p-4 rounded border top-0 start-0 mt-3 position-absolute">
-                                            <i className="fa-solid fa-arrow-right dest-arrow position-absolute"></i>
-                                            <h2>{dest.name}</h2>
-                                            <p>{dest.pere}</p>
-                                            <div className="dest-day border-top pt-3">
-                                                <i className="bi bi-send-fill me-2"></i>
-                                                <span>{dest.days}</span>
+                            {Destination.map(dest => {
+                                const t = dest.translations?.[lang];
+                                if (!t) return null; // seçilen dilde veri yoksa atla
+
+                                return (
+                                    <SplideSlide key={dest.id}>
+                                        <div className="dest-card position-relative">
+                                            <div className="dest-img overflow-hidden rounded">
+                                                <img src={t.image} className='img-fluid' alt={t.name} />
+                                                <span className="dest-price position-absolute top-0 end-0">{dest.price}</span>
+                                            </div>
+                                            <div className="dest-content p-4 rounded border top-0 start-0 mt-3 position-absolute">
+                                                <i className="fa-solid fa-arrow-right dest-arrow position-absolute"></i>
+                                                <h2>{t.name}</h2>
+                                                <p>{t.pere}</p>
+                                                <div className="dest-day border-top pt-3">
+                                                    <i className="bi bi-send-fill me-2"></i>
+                                                    <span>{dest.days?.[lang]}</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SplideSlide>
-                            ))}
+                                    </SplideSlide>
+                                );
+                            })}
                         </SplideTrack>
                     </Splide>
                 </motion.div>
@@ -200,7 +205,7 @@ function Index() {
                 <div className="row px-5 my-5 mx-0 gap-3 align-items-center justify-content-center">
                     {discoverData.map((item, index) => {
                         const t = item.translations?.[lang];
-                        if (!t) return null; // seçili dilde veri yoksa kartı gösterme
+                        if (!t) return null;
 
                         return (
                             <motion.div

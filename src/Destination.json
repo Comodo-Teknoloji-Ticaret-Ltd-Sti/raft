@@ -1,83 +1,250 @@
 [
     {
         "id": 1,
-        "name": "Rafting Macerası",
-        "image": "Images/rafting.JPG",
-        "days": "Her gün 3 seans",
         "price": "₺800",
-        "location": "Köprülü Kanyon",
-        "pere": "Adrenalin dolu dalgalarla mücadele edin, doğanın gücünü hissedin."
+        "days": {
+            "tr": "Her gün 3 seans",
+            "en": "3 sessions daily",
+            "ru": "Каждый день 3 сеанса"
+        },
+        "translations": {
+            "tr": {
+                "name": "Rafting Macerası",
+                "pere": "Adrenalin dolu dalgalarla mücadele edin, doğanın gücünü hissedin.",
+                "image": "Images/rafting.JPG"
+            },
+            "en": {
+                "name": "Rafting Adventure",
+                "pere": "Fight the adrenaline-filled waves and feel the power of nature.",
+                "image": "Images/rafting.JPG"
+            },
+            "ru": {
+                "name": "Рафтинг приключение",
+                "pere": "Боритесь с волнами, полными адреналина, почувствуйте силу природы.",
+                "image": "Images/rafting.JPG"
+            }
+        },
+        "location": {
+            "tr": "Köprülü Kanyon",
+            "en": "Koprulu Canyon",
+            "ru": "Каньон Копрюлю"
+        }
     },
     {
         "id": 2,
-        "name": "Quad (ATV) Safari",
-        "image": "Images/buggy.jpg",
-        "days": "09:00 - 18:00 arası",
         "price": "₺600",
-        "location": "Beşkonak Orman Yolu",
-        "pere": "Tozlu patikalarda hız ve özgürlüğün tadını çıkarın."
+        "days": {
+            "tr": "09:00 - 18:00 arası",
+            "en": "From 09:00 to 18:00",
+            "ru": "С 09:00 до 18:00"
+        },
+        "translations": {
+            "tr": {
+                "name": "Quad (ATV) Safari",
+                "pere": "Tozlu patikalarda hız ve özgürlüğün tadını çıkarın.",
+                "image": "Images/buggy.jpg"
+            },
+            "en": {
+                "name": "Quad (ATV) Safari",
+                "pere": "Enjoy speed and freedom on dusty trails.",
+                "image": "Images/buggy.jpg"
+            },
+            "ru": {
+                "name": "Квадроцикл (ATV) сафари",
+                "pere": "Наслаждайтесь скоростью и свободой на пыльных тропах.",
+                "image": "Images/buggy.jpg"
+            }
+        },
+        "location": {
+            "tr": "Beşkonak Orman Yolu",
+            "en": "Beskonak Forest Road",
+            "ru": "Лесная дорога Бешконак"
+        }
     },
     {
         "id": 3,
-        "name": "Balık Tutma Keyfi",
-        "image": "Images/fishing.jpg",
-        "days": "Sabah & Akşam Seansları",
         "price": "₺400",
-        "location": "Göl Kenarı",
-        "pere": "Sakin ve huzurlu anlarda doğayla baş başa balık tutmanın keyfi."
+        "days": {
+            "tr": "Sabah & Akşam Seansları",
+            "en": "Morning & Evening Sessions",
+            "ru": "Утренние и вечерние сеансы"
+        },
+        "translations": {
+            "tr": {
+                "name": "Balık Tutma Keyfi",
+                "pere": "Sakin ve huzurlu anlarda doğayla baş başa balık tutmanın keyfi.",
+                "image": "Images/fishing.jpg"
+            },
+            "en": {
+                "name": "Fishing Delight",
+                "pere": "The pleasure of fishing peacefully and quietly in nature.",
+                "image": "Images/fishing.jpg"
+            },
+            "ru": {
+                "name": "Удовольствие от рыбалки",
+                "pere": "Удовольствие от тихой и спокойной рыбалки на природе.",
+                "image": "Images/fishing.jpg"
+            }
+        },
+        "location": {
+            "tr": "Göl Kenarı",
+            "en": "Lakeside",
+            "ru": "Берег озера"
+        }
     },
     {
         "id": 4,
-        "name": "Buggy Turları",
-        "image": "Images/buggy.jpg",
-        "days": "Gün boyu turlar",
         "price": "₺650",
-        "location": "Off-road Parkuru",
-        "pere": "Zorlu arazi şartlarında eğlenceli ve heyecanlı buggy deneyimi."
+        "days": {
+            "tr": "Gün boyu turlar",
+            "en": "All-day tours",
+            "ru": "Туры на целый день"
+        },
+        "translations": {
+            "tr": {
+                "name": "Buggy Turları",
+                "pere": "Zorlu arazi şartlarında eğlenceli ve heyecanlı buggy deneyimi.",
+                "image": "Images/buggy.jpg"
+            },
+            "en": {
+                "name": "Buggy Tours",
+                "pere": "Fun and exciting buggy experience on challenging terrain.",
+                "image": "Images/buggy.jpg"
+            },
+            "ru": {
+                "name": "Туры на багги",
+                "pere": "Веселый и захватывающий опыт на багги по сложной местности.",
+                "image": "Images/buggy.jpg"
+            }
+        },
+        "location": {
+            "tr": "Off-road Parkuru",
+            "en": "Off-road Track",
+            "ru": "Внедорожная трасса"
+        }
     },
     {
         "id": 5,
-        "name": "Jeep Safari",
-        "image": "Images/jeepsafari.jpg",
-        "days": "Sabah ve Öğlen Turları",
         "price": "₺700",
-        "location": "Doğa Parkuru",
-        "pere": "Keşfedilmemiş rotalarda jeep ile maceraya atılın."
+        "days": {
+            "tr": "Sabah ve Öğlen Turları",
+            "en": "Morning and Noon Tours",
+            "ru": "Утренние и дневные туры"
+        },
+        "translations": {
+            "tr": {
+                "name": "Jeep Safari",
+                "pere": "Keşfedilmemiş rotalarda jeep ile maceraya atılın.",
+                "image": "Images/jeepsafari.jpg"
+            },
+            "en": {
+                "name": "Jeep Safari",
+                "pere": "Embark on an adventure with a jeep on undiscovered routes.",
+                "image": "Images/jeepsafari.jpg"
+            },
+            "ru": {
+                "name": "Джип-сафари",
+                "pere": "Отправляйтесь в приключение на джипе по неизведанным маршрутам.",
+                "image": "Images/jeepsafari.jpg"
+            }
+        },
+        "location": {
+            "tr": "Doğa Parkuru",
+            "en": "Nature Trail",
+            "ru": "Природная тропа"
+        }
     },
     {
         "id": 6,
-        "name": "Lavanta Bahçeleri Gezisi",
-        "image": "Images/lavander.jpg",
-        "days": "Sabah ve Öğleden sonra",
         "price": "₺300",
-        "location": "Lavanta Vadisi",
-        "pere": "Mis gibi lavanta kokuları eşliğinde huzur dolu bir gün."
+        "days": {
+            "tr": "Sabah ve Öğleden sonra",
+            "en": "Morning and Afternoon",
+            "ru": "Утро и после полудня"
+        },
+        "translations": {
+            "tr": {
+                "name": "Lavanta Bahçeleri Gezisi",
+                "pere": "Mis gibi lavanta kokuları eşliğinde huzur dolu bir gün.",
+                "image": "Images/lavander.jpg"
+            },
+            "en": {
+                "name": "Lavender Gardens Tour",
+                "pere": "A peaceful day accompanied by the lovely scent of lavender.",
+                "image": "Images/lavander.jpg"
+            },
+            "ru": {
+                "name": "Тур по лавандовым садам",
+                "pere": "Спокойный день с прекрасным ароматом лаванды.",
+                "image": "Images/lavander.jpg"
+            }
+        },
+        "location": {
+            "tr": "Lavanta Vadisi",
+            "en": "Lavender Valley",
+            "ru": "Лавандовая долина"
+        }
     },
     {
         "id": 7,
-        "name": "Tazı Kanyonu Turu",
-        "image": "Images/tazikanyon.jpg",
-        "days": "Sabah ve Öğlen Seansları",
         "price": "₺500",
-        "location": "Tazı Kanyonu",
-        "pere": "Doğanın kalbinde, muhteşem manzaralar eşliğinde yürüyüş deneyimi."
+        "days": {
+            "tr": "Sabah ve Öğlen Seansları",
+            "en": "Morning and Noon Sessions",
+            "ru": "Утренние и дневные сеансы"
+        },
+        "translations": {
+            "tr": {
+                "name": "Tazı Kanyonu Turu",
+                "pere": "Doğanın kalbinde, muhteşem manzaralar eşliğinde yürüyüş deneyimi.",
+                "image": "Images/tazikanyon.jpg"
+            },
+            "en": {
+                "name": "Tazı Canyon Tour",
+                "pere": "Hiking experience with stunning views in the heart of nature.",
+                "image": "Images/tazikanyon.jpg"
+            },
+            "ru": {
+                "name": "Тур по каньону Тазы",
+                "pere": "Поход с великолепными видами в сердце природы.",
+                "image": "Images/tazikanyon.jpg"
+            }
+        },
+        "location": {
+            "tr": "Tazı Kanyonu",
+            "en": "Tazı Canyon",
+            "ru": "Каньон Тазы"
+        }
     },
     {
         "id": 8,
-        "name": "Macera Parkı",
-        "image": "Images/maceraparki.jpg",
-        "days": "09:00 - 19:00 arası",
         "price": "₺450",
-        "location": "Macera Vadisi",
-        "pere": "Zipline, tırmanma ve daha fazlası ile dolu dolu eğlence."
-    },
-    {
-        "id": 9,
-        "name": "Zipline Deneyimi",
-        "image": "Images/maceraparki.jpg",
-        "days": "Sabah ve Öğleden sonra",
-        "price": "₺400",
-        "location": "Macera Vadisi",
-        "pere": "Gökyüzünde süzülürken adrenalin ve özgürlüğü yaşayın."
+        "days": {
+            "tr": "09:00 - 19:00 arası",
+            "en": "From 09:00 to 19:00",
+            "ru": "С 09:00 до 19:00"
+        },
+        "translations": {
+            "tr": {
+                "name": "Macera Parkı",
+                "pere": "Zipline, tırmanma ve daha fazlası ile dolu dolu eğlence.",
+                "image": "Images/maceraparki.jpg"
+            },
+            "en": {
+                "name": "Adventure Park",
+                "pere": "Full of fun with zipline, climbing, and much more.",
+                "image": "Images/maceraparki.jpg"
+            },
+            "ru": {
+                "name": "Парк приключений",
+                "pere": "Полный веселья с зиплайном, скалолазанием и многое другое.",
+                "image": "Images/maceraparki.jpg"
+            }
+        },
+        "location": {
+            "tr": "Beşkonak",
+            "en": "Beskonak",
+            "ru": "Бешконак"
+        }
     }
 ]
