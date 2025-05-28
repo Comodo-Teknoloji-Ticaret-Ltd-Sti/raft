@@ -54,8 +54,10 @@
     }
   },
   "steps": {
-    "title": "3 Adımda Maceraya Katıl",
-    "subtitle": "Nasıl Katılırım?",
+    "section": {
+      "title": "3 Adımda Maceraya Katıl",
+      "subtitle": "Nasıl Katılırım?"
+    },
     "step1": {
       "title": "Aktiviteni Seç",
       "description": "Rafting, zipline, quad safari, lavanta tarlası gezisi ve daha fazlası arasından dilediğini seç."
@@ -68,6 +70,11 @@
       "title": "Belirtilen Noktada Hazır Ol",
       "description": "Belirlenen saatte buluşma noktasında ol, macera dolu bir gün seni bekliyor!"
     }
+  },
+  "destinations": {
+    "title": "Popüler Aktiviteler",
+    "subtitle": "Macera Noktaları",
+    "description": "En çok tercih edilen doğa ve adrenalin dolu deneyimleri keşfet."
   },
   "testimonials": {
     "title": "Misafirlerimiz Ne Diyor?",

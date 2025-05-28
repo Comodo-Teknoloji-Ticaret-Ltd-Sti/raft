@@ -2,10 +2,11 @@
         {
             "id": 1,
             "image": "src/assets/tst-image-1.webp",
-            "quoteImage": "src/assets/tst-3.webp",
+            "quoteImage": "src/assets/quote-left.png",
             "text": {
                 "tr": "MC Raft sayesinde sadece bir gün değil, hayat boyu unutamayacağımız anılar biriktirdik. Jeep safari ve zipline inanılmazdı! Organizasyon kusursuzdu, ekip çok ilgiliydi. Tüm arkadaşlarımıza tavsiye ediyoruz.",
-                "en": "Thanks to MC Raft, we collected unforgettable memories not just for one day, but for a lifetime. Jeep safari and zipline were incredible! The organization was flawless, and the team was very attentive. We recommend it to all our friends."
+                "en": "Thanks to MC Raft, we collected unforgettable memories not just for one day, but for a lifetime. Jeep safari and zipline were incredible! The organization was flawless, and the team was very attentive. We recommend it to all our friends.",
+                "ru": "Благодаря MC Raft мы собрали незабываемые воспоминания не только на один день, но и на всю жизнь. Джип-сафари и зиплайн были потрясающими! Организация была безупречной, а команда — очень внимательной. Рекомендуем всем нашим друзьям."
             },
             "stars": 5,
             "user": {
@@ -20,17 +21,19 @@
         {
             "id": 2,
             "image": "src/assets/tst-image-1.webp",
-            "quoteImage": "src/assets/tst-2.webp",
+            "quoteImage": "src/assets/quote-left.png",
             "text": {
                 "tr": "Bu seyahat acentesiyle rezervasyon yapmak hayatımızı değiştirdi. Titiz planlamaları ve kişiselleştirilmiş yaklaşımları sayesinde seyahatimiz sadece bir tatil değil, unutulmaz anlar koleksiyonu oldu.",
-                "en": "Booking with this travel agency was a game changer. Their meticulous planning and personalized approach made our trip not just a vacation but a collection of unforgettable moments."
+                "en": "Booking with this travel agency was a game changer. Their meticulous planning and personalized approach made our trip not just a vacation but a collection of unforgettable moments.",
+                "ru": "Бронирование через это туристическое агентство стало настоящим прорывом. Благодаря их тщательному планированию и индивидуальному подходу наша поездка превратилась не просто в отпуск, а в коллекцию незабываемых моментов."
             },
             "stars": 5,
             "user": {
                 "name": "TASHA STEWART",
                 "info": {
                     "tr": "ThemeXriver'da Web Geliştirici",
-                    "en": "Web Developer at ThemeXriver"
+                    "en": "Web Developer at ThemeXriver",
+                    "ru": "Веб-разработчик в ThemeXriver"
                 },
                 "avatar": "src/assets/tst-2.webp"
             }

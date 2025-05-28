@@ -159,28 +159,28 @@ function Index() {
                         extensions={{ AutoScroll }}
                     >
                         <SplideTrack>                            {Destination.map(dest => {
-                                const t = dest.translations?.[i18n.language];
-                                if (!t) return null; // seçilen dilde veri yoksa atla
+                            const t = dest.translations?.[i18n.language];
+                            if (!t) return null; // seçilen dilde veri yoksa atla
 
-                                return (
-                                    <SplideSlide key={dest.id}>
-                                        <div className="dest-card position-relative">
-                                            <div className="dest-img overflow-hidden rounded">
-                                                <img src={t.image} className='img-fluid' alt={t.name} />
-                                                <span className="dest-price position-absolute top-0 end-0">{dest.price}</span>
-                                            </div>
-                                            <div className="dest-content p-4 rounded border top-0 start-0 mt-3 position-absolute">
-                                                <i className="fa-solid fa-arrow-right dest-arrow position-absolute"></i>
-                                                <h2>{t.name}</h2>
-                                                <p>{t.pere}</p>                                                <div className="dest-day border-top pt-3">
-                                                    <i className="bi bi-send-fill me-2"></i>
-                                                    <span>{dest.days?.[i18n.language]}</span>
-                                                </div>
+                            return (
+                                <SplideSlide key={dest.id}>
+                                    <div className="dest-card position-relative">
+                                        <div className="dest-img overflow-hidden rounded">
+                                            <img src={t.image} className='img-fluid' alt={t.name} />
+                                            <span className="dest-price position-absolute top-0 end-0">{dest.price}</span>
+                                        </div>
+                                        <div className="dest-content p-4 rounded border top-0 start-0 mt-3 position-absolute">
+                                            <i className="fa-solid fa-arrow-right dest-arrow position-absolute"></i>
+                                            <h2>{t.name}</h2>
+                                            <p>{t.pere}</p>                                                <div className="dest-day border-top pt-3">
+                                                <i className="bi bi-send-fill me-2"></i>
+                                                <span>{dest.days?.[i18n.language]}</span>
                                             </div>
                                         </div>
-                                    </SplideSlide>
-                                );
-                            })}
+                                    </div>
+                                </SplideSlide>
+                            );
+                        })}
                         </SplideTrack>
                     </Splide>
                 </motion.div>
@@ -203,26 +203,26 @@ function Index() {
                     </div>
                 </motion.div>
                 <div className="row px-5 my-5 mx-0 gap-3 align-items-center justify-content-center">                    {discoverData.map((item, index) => {
-                        const t = item.translations?.[i18n.language];
-                        if (!t) return null;
+                    const t = item.translations?.[i18n.language];
+                    if (!t) return null;
 
-                        return (
-                            <motion.div
-                                key={item.id}
-                                className="col-lg-2 discover-card position-relative"
-                                initial={{ opacity: 0, x: 100 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.6, delay: 0.3 + index * 0.2 }}
-                                viewport={{ once: false, amount: 0.3 }}
-                            >
-                                <img src={t.image} className="img-fluid" alt={t.name} />
-                                <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                                    <span><i className="bi bi-geo-alt-fill"></i> {t.name}</span>
-                                    <h2 className="mt-4">{t.pere}</h2>
-                                </div>
-                            </motion.div>
-                        );
-                    })}
+                    return (
+                        <motion.div
+                            key={item.id}
+                            className="col-lg-2 discover-card position-relative"
+                            initial={{ opacity: 0, x: 100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, delay: 0.3 + index * 0.2 }}
+                            viewport={{ once: false, amount: 0.3 }}
+                        >
+                            <img src={t.image} className="img-fluid" alt={t.name} />
+                            <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
+                                <span><i className="bi bi-geo-alt-fill"></i> {t.name}</span>
+                                <h2 className="mt-4">{t.pere}</h2>
+                            </div>
+                        </motion.div>
+                    );
+                })}
                 </div>
             </div>
             {/* working Steps */}

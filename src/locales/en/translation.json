@@ -54,8 +54,10 @@
     }
   },
   "steps": {
-    "title": "Join the Adventure in 3 Steps",
-    "subtitle": "How to Join?",
+    "section": {
+      "title": "Join the Adventure in 3 Steps",
+      "subtitle": "How to Join?"
+    },
     "step1": {
       "title": "Choose Your Activity",
       "description": "Select from rafting, zipline, quad safari, lavender field tour, and more."
@@ -68,6 +70,11 @@
       "title": "Be Ready at the Specified Point",
       "description": "Be at the meeting point at the specified time, an adventurous day awaits you!"
     }
+  },
+  "destinations": {
+    "title": "Popular Activities",
+    "subtitle": "Adventure Spots",
+    "description": "Discover the most preferred nature and adrenaline-filled experiences."
   },
   "testimonials": {
     "title": "What Our Guests Say?",
