@@ -48,10 +48,11 @@ import { Link } from 'react-router-dom';
 import { motion } from "motion/react"
 import Footer from '../../Components/Footer/Footer';
 import discoverData from '../../AfisDesination.json';
+import comment from '../../Comment.json';
 
 function Index() {
     const { t } = useTranslation();
-    const lang = "ru"
+    const lang = "en"
 
     return (
         <>
@@ -292,73 +293,39 @@ function Index() {
                 </div>
                 <div className="container mt-5">
                     <div className="row">
-                        <Swiper
-                            slidesPerView={1}
-                            spaceBetween={10}
-                            loop={true}
-                            className='test-Swiper'
-                        >
-                            <SwiperSlide>
-                                <div className="row align-items-center">
-                                    <div className="col-lg-6">
-                                        <div className="test-img d-flex align-items-center justify-content-center">
-                                            <img src={tstimg1} className='img-fluid' alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6">
-                                        <div className="test-content">
-                                            <img src={quote} className='img-fluid test-content-img' alt="" />
-                                            <p className='test-pere'>"MC Raft sayesinde sadece bir gün değil, hayat boyu unutamayacağımız anılar biriktirdik. Jeep safari ve zipline inanılmazdı! Organizasyon kusursuzdu, ekip çok ilgiliydi. Tüm arkadaşlarımıza tavsiye ediyoruz."</p>
-
-                                            <div className="test-stars">
-                                                <i className="bi bi-star-fill"></i>
-                                                <i className="bi bi-star-fill"></i>
-                                                <i className="bi bi-star-fill"></i>
-                                                <i className="bi bi-star-fill"></i>
-                                                <i className="bi bi-star-fill"></i>
+                        <Swiper slidesPerView={1} spaceBetween={10} loop={true} className="test-Swiper">
+                            {comment.map(item => (
+                                <SwiperSlide key={item.id}>
+                                    <div className="row align-items-center">
+                                        <div className="col-lg-6">
+                                            <div className="test-img d-flex align-items-center justify-content-center">
+                                                <img src={item.image} className="img-fluid" alt="testimonial" />
                                             </div>
-                                            <div className="test-user mt-3 d-flex align-items-center gap-2">
-                                                <img src={tstimg2} className='img-fluid' alt="" />
-                                                <div className="test-user-info">
-                                                    <h3>FURKAN AYAKDAŞ</h3>
-                                                    <p className='m-0'>Antalya / Türkiye</p>
+                                        </div>
+                                        <div className="col-lg-6">
+                                            <div className="test-content">
+                                                <img src={item.quoteImage} className="img-fluid test-content-img" alt="quote" />
+                                                <p className="test-pere">"{item.text.tr}"</p>
+                                                <div className="test-stars">
+                                                    {[...Array(item.stars)].map((_, i) => (
+                                                        <i key={i} className="bi bi-star-fill"></i>
+                                                    ))}
+                                                </div>
+                                                <div className="test-user mt-3 d-flex align-items-center gap-2">
+                                                    <img src={item.user.avatar} className="img-fluid" alt={item.user.name} />
+                                                    <div className="test-user-info">
+                                                        <h3>{item.user.name}</h3>
+                                                        <p className="m-0">{item.user.info.tr}</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="row align-items-center">
-                                    <div className="col-lg-6">
-                                        <div className="test-img d-flex align-items-center justify-content-center">
-                                            <img src={tstimg1} className='img-fluid' alt="" />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6">
-                                        <div className="test-content">
-                                            <img src={quote} className='img-fluid test-content-img' alt="" />
-                                            <p className='test-pere'>"Booking with this travel agency was a game changer their meticulous planning and personalized approach made our trip not just a vacation but a collection of unforgettable moments. From seamless logistics to hidden gems, they turned our travel dreams into a reality, earning our trust and loyalty."</p>
-                                            <div className="test-stars">
-                                                <i className="bi bi-star-fill"></i>
-                                                <i className="bi bi-star-fill"></i>
-                                                <i className="bi bi-star-fill"></i>
-                                                <i className="bi bi-star-fill"></i>
-                                                <i className="bi bi-star-fill"></i>
-                                            </div>
-                                            <div className="test-user mt-3 d-flex align-items-center gap-2">
-                                                <img src={tstimg2} className='img-fluid' alt="" />
-                                                <div className="test-user-info">
-                                                    <h3>TASHA STEWART</h3>
-                                                    <p className='m-0'>Web Developer at ThemeXriver</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </SwiperSlide>
+                                </SwiperSlide>
+                            ))}
                         </Swiper>
-                    </div>                </div>
+                    </div>
+                </div>
             </div>
             {/* Footer */}
             <Footer />

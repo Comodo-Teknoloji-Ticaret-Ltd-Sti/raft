@@ -1,0 +1,38 @@
+    [
+        {
+            "id": 1,
+            "image": "src/assets/tst-image-1.webp",
+            "quoteImage": "src/assets/tst-3.webp",
+            "text": {
+                "tr": "MC Raft sayesinde sadece bir gün değil, hayat boyu unutamayacağımız anılar biriktirdik. Jeep safari ve zipline inanılmazdı! Organizasyon kusursuzdu, ekip çok ilgiliydi. Tüm arkadaşlarımıza tavsiye ediyoruz.",
+                "en": "Thanks to MC Raft, we collected unforgettable memories not just for one day, but for a lifetime. Jeep safari and zipline were incredible! The organization was flawless, and the team was very attentive. We recommend it to all our friends."
+            },
+            "stars": 5,
+            "user": {
+                "name": "FURKAN AYAKDAŞ",
+                "info": {
+                    "tr": "Antalya / Türkiye",
+                    "en": "Antalya / Turkey"
+                },
+                "avatar": "src/assets/tst-3.webp"
+            }
+        },
+        {
+            "id": 2,
+            "image": "src/assets/tst-image-1.webp",
+            "quoteImage": "src/assets/tst-2.webp",
+            "text": {
+                "tr": "Bu seyahat acentesiyle rezervasyon yapmak hayatımızı değiştirdi. Titiz planlamaları ve kişiselleştirilmiş yaklaşımları sayesinde seyahatimiz sadece bir tatil değil, unutulmaz anlar koleksiyonu oldu.",
+                "en": "Booking with this travel agency was a game changer. Their meticulous planning and personalized approach made our trip not just a vacation but a collection of unforgettable moments."
+            },
+            "stars": 5,
+            "user": {
+                "name": "TASHA STEWART",
+                "info": {
+                    "tr": "ThemeXriver'da Web Geliştirici",
+                    "en": "Web Developer at ThemeXriver"
+                },
+                "avatar": "src/assets/tst-2.webp"
+            }
+        }
+    ]
