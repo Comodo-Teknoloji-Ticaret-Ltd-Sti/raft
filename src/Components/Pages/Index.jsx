@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -52,6 +53,7 @@ import { motion } from "motion/react"
 import Footer from '../../Components/Footer/Footer';
 
 function Index() {
+  const { t } = useTranslation();
 
     return (
         <>

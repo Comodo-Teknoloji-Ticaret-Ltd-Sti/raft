@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "about": "Hakkımızda",
+    "activities": "Aktiviteler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "slide1": {
+      "title": "MC Raft",
+      "subtitle": "Adrenalin Suyun İçinde!",
+      "description": "Serin sular, güçlü akıntılar ve eşsiz heyecan seni bekliyor.",
+      "button": "Keşfet"
+    },
+    "slide2": {
+      "title": "MC Raft",
+      "subtitle": "Tozu Dumana Kat!",
+      "description": "Engebeli arazilerde ATV ile unutulmaz bir maceraya çık.",
+      "button": "Tura Göz At"
+    },
+    "slide3": {
+      "title": "MC Raft",
+      "subtitle": "Doğanın Kalbindesin",
+      "description": "Tazı Kanyonu'nun nefes kesen manzarasıyla tanış.",
+      "button": "Detayları Gör"
+    }
+  },
+  "activities": {
+    "title": "Popüler Aktiviteler",
+    "subtitle": "Macera Noktaları",
+    "description": "En çok tercih edilen doğa ve adrenalin dolu deneyimleri keşfet."
+  },
+  "discover": {
+    "title": "Doğanın Keyfini Çıkarın",
+    "subtitle": "Aktivitelerimiz",
+    "description": "Rafting, quad, balıkçılık, buggy, jeep safari, lavanta tarlaları, Tazı Kanyonu, macera parkı ve zipline ile doğada heyecan ve huzuru bir arada yaşayın.",
+    "locations": {
+      "adventurePark": {
+        "title": "Adventure Park",
+        "description": "Güvenli, kontrollü ve profesyonel rehber eşliğinde"
+      },
+      "buggy": {
+        "title": "Buggy",
+        "description": "Doğanın kalbinde hızın, heyecanın ve adrenalinin zirvesine ulaş!"
+      },
+      "fishing": {
+        "title": "Balık Tutma",
+        "description": "Doğayla baş başa, keyifli ve sabır dolu bir balık tutma deneyimi seni bekliyor!"
+      },
+      "taziCanyon": {
+        "title": "Tazı Kanyonu",
+        "description": "Mor renklere boyanmış bir doğa şöleni seni bekliyor."
+      }
+    }
+  },
+  "steps": {
+    "title": "3 Adımda Maceraya Katıl",
+    "subtitle": "Nasıl Katılırım?",
+    "step1": {
+      "title": "Aktiviteni Seç",
+      "description": "Rafting, zipline, quad safari, lavanta tarlası gezisi ve daha fazlası arasından dilediğini seç."
+    },
+    "step2": {
+      "title": "Kolayca Rezervasyon Yap",
+      "description": "Müşteri hizmetlerimiz veya WhatsApp üzerinden hızlı ve güvenli bir şekilde rezervasyonunu tamamla."
+    },
+    "step3": {
+      "title": "Belirtilen Noktada Hazır Ol",
+      "description": "Belirlenen saatte buluşma noktasında ol, macera dolu bir gün seni bekliyor!"
+    }
+  },
+  "testimonials": {
+    "title": "Misafirlerimiz Ne Diyor?",
+    "subtitle": "Misafir Yorumları",
+    "description": "Etkinliklerimize katılan misafirlerimiz, doğayla iç içe, heyecan dolu ve unutulmaz anılarla dolu bir gün geçirdiklerini söylüyorlar. İşte bazı yorumlar;"
+  }
+}

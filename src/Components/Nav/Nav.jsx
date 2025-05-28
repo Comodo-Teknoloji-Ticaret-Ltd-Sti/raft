@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Nav.css';
 
 function Nav() {
-
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -44,11 +45,11 @@ function Nav() {
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-auto">
-              <li className="nav-item"><Link className="nav-link" to="/">Anasayfa</Link></li>
-              {/* <li className="nav-item"><Link className="nav-link" to='/about'>Hakkımızda</Link></li> */}
-              {/* <li className="nav-item"><Link className="nav-link" to='/tours'>Tour</Link></li> */}
-              <li className="nav-item"><Link className="nav-link" to='/blog'>Aktiviteler</Link></li>
-              <li className="nav-item"><Link className="nav-link" to='contact'>İletişim</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/">{t('nav.home')}</Link></li>
+              {/* <li className="nav-item"><Link className="nav-link" to='/about'>{t('nav.about')}</Link></li> */}
+              {/* <li className="nav-item"><Link className="nav-link" to='/tours'>{t('nav.tours')}</Link></li> */}
+              <li className="nav-item"><Link className="nav-link" to='/blog'>{t('nav.activities')}</Link></li>
+              <li className="nav-item"><Link className="nav-link" to='contact'>{t('nav.contact')}</Link></li>
             </ul>
           </div>
         </div>

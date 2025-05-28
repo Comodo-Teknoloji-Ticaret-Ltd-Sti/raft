@@ -1,5 +1,6 @@
 import './App.css'
 import { Routes, Route, useLocation } from 'react-router-dom'
+import './i18n'
 import Nav from './Components/Nav/Nav'
 import Index from './Components/Pages/Index'
 import About from './Components/Pages/About'
@@ -10,6 +11,7 @@ import Contact from './Components/Pages/Contact'
 import Footer from './Components/Footer/Footer'
 import DestinationDetails from './Components/Pages/Destination-Details'
 import Blog from './Components/Pages/Blog'
+import LanguageSwitcher from './Components/LanguageSwitcher'
 
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
   return (
     <>
       <Nav />
+      <LanguageSwitcher />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />

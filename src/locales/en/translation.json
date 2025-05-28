@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "activities": "Activities",
+    "contact": "Contact"
+  },
+  "hero": {
+    "slide1": {
+      "title": "MC Raft",
+      "subtitle": "Adrenaline in the Water!",
+      "description": "Cool waters, strong currents, and unique excitement await you.",
+      "button": "Explore"
+    },
+    "slide2": {
+      "title": "MC Raft",
+      "subtitle": "Kick Up Some Dust!",
+      "description": "Embark on an unforgettable adventure with ATV on rough terrain.",
+      "button": "View Tour"
+    },
+    "slide3": {
+      "title": "MC Raft",
+      "subtitle": "In the Heart of Nature",
+      "description": "Meet the breathtaking view of Tazi Canyon.",
+      "button": "See Details"
+    }
+  },
+  "activities": {
+    "title": "Popular Activities",
+    "subtitle": "Adventure Spots",
+    "description": "Discover our most preferred nature and adrenaline-filled experiences."
+  },
+  "discover": {
+    "title": "Enjoy Nature",
+    "subtitle": "Our Activities",
+    "description": "Experience both excitement and tranquility in nature with rafting, quad, fishing, buggy, jeep safari, lavender fields, Tazi Canyon, adventure park, and zipline.",
+    "locations": {
+      "adventurePark": {
+        "title": "Adventure Park",
+        "description": "Safe, controlled, and accompanied by professional guides"
+      },
+      "buggy": {
+        "title": "Buggy",
+        "description": "Reach the peak of speed, excitement, and adrenaline in the heart of nature!"
+      },
+      "fishing": {
+        "title": "Fishing",
+        "description": "A peaceful and patient fishing experience awaits you alone with nature!"
+      },
+      "taziCanyon": {
+        "title": "Tazi Canyon",
+        "description": "A natural feast painted in purple colors awaits you."
+      }
+    }
+  },
+  "steps": {
+    "title": "Join the Adventure in 3 Steps",
+    "subtitle": "How to Join?",
+    "step1": {
+      "title": "Choose Your Activity",
+      "description": "Select from rafting, zipline, quad safari, lavender field tour, and more."
+    },
+    "step2": {
+      "title": "Make an Easy Reservation",
+      "description": "Complete your reservation quickly and securely through our customer service or WhatsApp."
+    },
+    "step3": {
+      "title": "Be Ready at the Specified Point",
+      "description": "Be at the meeting point at the specified time, an adventurous day awaits you!"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Guests Say?",
+    "subtitle": "Guest Reviews",
+    "description": "Our guests who participated in our activities say they spent a day full of unforgettable memories in nature with excitement. Here are some reviews;"
+  }
+}
