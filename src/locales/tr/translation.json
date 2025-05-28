@@ -80,5 +80,17 @@
     "title": "Misafirlerimiz Ne Diyor?",
     "subtitle": "Misafir Yorumları",
     "description": "Etkinliklerimize katılan misafirlerimiz, doğayla iç içe, heyecan dolu ve unutulmaz anılarla dolu bir gün geçirdiklerini söylüyorlar. İşte bazı yorumlar;"
+  },
+  "footer": {
+    "quick_links": "Hızlı Bağlantılar:",
+    "rafting": "Rafting Turları",
+    "quad": "ATV (Quad) Safari",
+    "fishing": "Balık Tutma Turları",
+    "buggy": "Buggy Safari",
+    "jeep": "Jeep Safari",
+    "lavender": "Lavanta Bahçeleri Gezisi",
+    "tazi": "Tazı Kanyonu Turu",
+    "adventure_park": "Macera Parkı",
+    "zipline": "Zipline Deneyimi"
   }
 }
