@@ -49,13 +49,16 @@ import { motion } from "motion/react"
 import Footer from '../../Components/Footer/Footer';
 import discoverData from '../../AfisDesination.json';
 import comment from '../../Comment.json';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 function Index() {
-    const { t } = useTranslation();
-    const lang = "en"
+    const { t, i18n } = useTranslation();
 
     return (
         <>
+            <div className="position-fixed top-0 end-0 m-3 z-3">
+                <LanguageSwitcher />
+            </div>
             {/* Hero Slider */}
             <Swiper
                 modules={[Navigation, EffectFade]}
@@ -156,9 +159,8 @@ function Index() {
 
                         extensions={{ AutoScroll }}
                     >
-                        <SplideTrack>
-                            {Destination.map(dest => {
-                                const t = dest.translations?.[lang];
+                        <SplideTrack>                            {Destination.map(dest => {
+                                const t = dest.translations?.[i18n.language];
                                 if (!t) return null; // seçilen dilde veri yoksa atla
 
                                 return (
@@ -171,10 +173,9 @@ function Index() {
                                             <div className="dest-content p-4 rounded border top-0 start-0 mt-3 position-absolute">
                                                 <i className="fa-solid fa-arrow-right dest-arrow position-absolute"></i>
                                                 <h2>{t.name}</h2>
-                                                <p>{t.pere}</p>
-                                                <div className="dest-day border-top pt-3">
+                                                <p>{t.pere}</p>                                                <div className="dest-day border-top pt-3">
                                                     <i className="bi bi-send-fill me-2"></i>
-                                                    <span>{dest.days?.[lang]}</span>
+                                                    <span>{dest.days?.[i18n.language]}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -203,9 +204,8 @@ function Index() {
                         <p>Rafting, quad, balıkçılık, buggy, jeep safari, lavanta tarlaları, Tazı Kanyonu, macera parkı ve zipline ile doğada heyecan ve huzuru bir arada yaşayın.</p>
                     </div>
                 </motion.div>
-                <div className="row px-5 my-5 mx-0 gap-3 align-items-center justify-content-center">
-                    {discoverData.map((item, index) => {
-                        const t = item.translations?.[lang];
+                <div className="row px-5 my-5 mx-0 gap-3 align-items-center justify-content-center">                    {discoverData.map((item, index) => {
+                        const t = item.translations?.[i18n.language];
                         if (!t) return null;
 
                         return (
