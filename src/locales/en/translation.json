@@ -92,5 +92,13 @@
     "tazi": "Tazi Canyon Tour",
     "adventure_park": "Adventure Park",
     "zipline": "Zipline Experience"
+  },
+  "contact": {
+    "title": "Contact",
+    "get_in_touch_line1": "Get",
+    "get_in_touch_line2": "In Touch With Us!",
+    "address": "Address",
+    "phone": "Phone Number",
+    "email": "Email Address"
   }
 }

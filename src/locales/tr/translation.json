@@ -92,5 +92,13 @@
     "tazi": "Tazı Kanyonu Turu",
     "adventure_park": "Macera Parkı",
     "zipline": "Zipline Deneyimi"
+  },
+  "contact": {
+    "title": "İletişim",
+    "get_in_touch_line1": "Bizimle",
+    "get_in_touch_line2": "İletişime Geçin!",
+    "address": "Adres",
+    "phone": "Telefon Numarası",
+    "email": "Mail Adresi"
   }
 }
