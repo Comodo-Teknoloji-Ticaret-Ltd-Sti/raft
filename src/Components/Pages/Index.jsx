@@ -77,9 +77,9 @@ function Index() {
                     <div className="hero hero1 d-flex flex-column justify-content-center align-items-center">
                         <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className='text-white'>MC Raft</h1>
-                            <h2 className="text-white">Adrenalin Suyun İçinde!</h2>
-                            <p className="text-white fs-5">Serin sular, güçlü akıntılar ve eşsiz heyecan seni bekliyor.</p>
-                            <button className="btn text-white hero-btn mt-4">Keşfet <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <h2 className="text-white">{t('hero.slide1.title')}</h2>
+                            <p className="text-white fs-5">{t('hero.slide1.description')}</p>
+                            <button className="btn text-white hero-btn mt-4">{t('common.explore')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -88,9 +88,9 @@ function Index() {
                     <div className="hero hero2 d-flex flex-column justify-content-center align-items-center">
                         <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className='text-white'>MC Raft</h1>
-                            <h2 className="text-white">Tozu Dumana Kat!</h2>
-                            <p className="text-white fs-5">Engebeli arazilerde ATV ile unutulmaz bir maceraya çık.</p>
-                            <button className="btn text-white hero-btn mt-4">Tura Göz At <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <h2 className="text-white">{t('hero.slide2.title')}</h2>
+                            <p className="text-white fs-5">{t('hero.slide2.description')}</p>
+                            <button className="btn text-white hero-btn mt-4">{t('common.viewTour')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -99,9 +99,9 @@ function Index() {
                     <div className="hero hero3 d-flex flex-column justify-content-center align-items-center">
                         <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className='text-white'>MC Raft</h1>
-                            <h2 className="text-white">Doğanın Kalbindesin</h2>
-                            <p className="text-white fs-5">Tazı Kanyonu’nun nefes kesen manzarasıyla tanış.</p>
-                            <button className="btn text-white hero-btn mt-4">Detayları Gör <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <h2 className="text-white">{t('hero.slide3.title')}</h2>
+                            <p className="text-white fs-5">{t('hero.slide3.description')}</p>
+                            <button className="btn text-white hero-btn mt-4">{t('common.viewDetails')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -118,14 +118,13 @@ function Index() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     viewport={{ once: false, amount: 0.3 }}
                 >
-                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
-                        <span>Macera Noktaları</span>
+                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">                        <span>{t('destinations.subtitle')}</span>
                         <div className=" d-flex align-items-center gap-2">
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
-                            <h2>Popüler Aktiviteler</h2>
+                            <h2>{t('destinations.title')}</h2>
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
                         </div>
-                        <p>En çok tercih edilen doğa ve adrenalin dolu deneyimleri keşfet.</p>
+                        <p>{t('destinations.description')}</p>
                     </div>
                 </motion.div>
                 <motion.div className="destinations-wrapper mt-5"
@@ -194,14 +193,13 @@ function Index() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     viewport={{ once: false, amount: 0.3 }}
                 >
-                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
-                        <span>Aktivitelerimiz</span>
+                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">                        <span>{t('discover.subtitle')}</span>
                         <div className=" d-flex align-items-center gap-2">
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
-                            <h2>Doğanın Keyfini Çıkarın</h2>
+                            <h2>{t('discover.title')}</h2>
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
                         </div>
-                        <p>Rafting, quad, balıkçılık, buggy, jeep safari, lavanta tarlaları, Tazı Kanyonu, macera parkı ve zipline ile doğada heyecan ve huzuru bir arada yaşayın.</p>
+                        <p>{t('discover.description')}</p>
                     </div>
                 </motion.div>
                 <div className="row px-5 my-5 mx-0 gap-3 align-items-center justify-content-center">                    {discoverData.map((item, index) => {
@@ -234,12 +232,10 @@ function Index() {
                 <div className="container">
                     <div className="row">
                         <div className="section-title discover-title">
-                            <div className="text-start flex-column d-flex align-items-start justify-content-start gap-3">
-                                <span>Nasıl Katılırım?</span>
+                            <div className="text-start flex-column d-flex align-items-start justify-content-start gap-3">                                <span>{t('steps.section.subtitle')}</span>
                                 <div className=" d-flex align-items-center gap-2">
                                     <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
-                                    <h2>3 Adımda<br />
-                                        Maceraya Katıl</h2>
+                                    <h2>{t('steps.section.title')}</h2>
                                     <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
                                 </div>
                             </div>
@@ -251,8 +247,8 @@ function Index() {
                                 <img src={steps1} className='img-fluid' alt="" />
                             </div>
                             <div className="step-content">
-                                <h2>Aktiviteni Seç</h2>
-                                <p>Rafting, zipline, quad safari, lavanta tarlası gezisi ve daha fazlası arasından dilediğini seç.</p>
+                                <h2>{t('steps.step1.title')}</h2>
+                                <p>{t('steps.step1.description')}</p>
                             </div>
                         </div>
                         <div className="col-lg-4 step-card rounded border p-4 d-flex flex-column gap-3">
@@ -260,8 +256,8 @@ function Index() {
                                 <img src={steps2} className='img-fluid' alt="" />
                             </div>
                             <div className="step-content">
-                                <h2>Kolayca Rezervasyon Yap</h2>
-                                <p>Müşteri hizmetlerimiz veya WhatsApp üzerinden hızlı ve güvenli bir şekilde rezervasyonunu tamamla.</p>
+                                <h2>{t('steps.step2.title')}</h2>
+                                <p>{t('steps.step2.description')}</p>
                             </div>
                         </div>
                         <div className="col-lg-4 step-card rounded border p-4 d-flex flex-column gap-3">
@@ -269,8 +265,8 @@ function Index() {
                                 <img src={steps3} className='img-fluid' alt="" />
                             </div>
                             <div className="step-content">
-                                <h2>Belirtilen Noktada Hazır Ol</h2>
-                                <p>Belirlenen saatte buluşma noktasında ol, macera dolu bir gün seni bekliyor!</p>
+                                <h2>{t('steps.step3.title')}</h2>
+                                <p>{t('steps.step3.description')}</p>
                             </div>
                         </div>
                     </div>
@@ -281,14 +277,13 @@ function Index() {
                 <img src={testBG} className='img-fluid test-bg-img position-absolute' alt="" />
                 <img src={testBG} className='img-fluid test-bg-img2 position-absolute' alt="" />
                 <div className="section-title test-title">
-                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
-                        <span>Misafir Yorumları</span>
+                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">                        <span>{t('testimonials.subtitle')}</span>
                         <div className=" d-flex align-items-center gap-2">
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
-                            <h2>Misafirlerimiz Ne Diyor?</h2>
+                            <h2>{t('testimonials.title')}</h2>
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
                         </div>
-                        <p>Etkinliklerimize katılan misafirlerimiz, doğayla iç içe, heyecan dolu ve unutulmaz anılarla dolu bir gün geçirdiklerini söylüyorlar. İşte bazı yorumlar;</p>
+                        <p>{t('testimonials.description')}</p>
                     </div>
                 </div>
                 <div className="container mt-5">
@@ -304,8 +299,7 @@ function Index() {
                                         </div>
                                         <div className="col-lg-6">
                                             <div className="test-content">
-                                                <img src={item.quoteImage} className="img-fluid test-content-img" alt="quote" />
-                                                <p className="test-pere">"{item.text.tr}"</p>
+                                                <img src={item.quoteImage} className="img-fluid test-content-img" alt="quote" />                                                <p className="test-pere">"{item.text[i18n.language]}"</p>
                                                 <div className="test-stars">
                                                     {[...Array(item.stars)].map((_, i) => (
                                                         <i key={i} className="bi bi-star-fill"></i>
@@ -315,7 +309,7 @@ function Index() {
                                                     <img src={item.user.avatar} className="img-fluid" alt={item.user.name} />
                                                     <div className="test-user-info">
                                                         <h3>{item.user.name}</h3>
-                                                        <p className="m-0">{item.user.info.tr}</p>
+                                                        <p className="m-0">{item.user.info[i18n.language]}</p>
                                                     </div>
                                                 </div>
                                             </div>
