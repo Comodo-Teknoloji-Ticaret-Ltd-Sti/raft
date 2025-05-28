@@ -27,10 +27,6 @@ import tst4 from './../../assets/tst-4.webp'
 import abEleement1 from './../../assets/about-element-1.webp'
 import abEleement2 from './../../assets/about-element-2.webp'
 import abEleement3 from './../../assets/about-element-3.webp'
-import DiscoverImg1 from './../../assets/Afis/adventure.png'
-import DiscoverImg2 from './../../assets/Afis/buggy.png'
-import DiscoverImg3 from './../../assets/Afis/fishing.png'
-import DiscoverImg4 from './../../assets/Afis/tazi.png'
 import steps1 from './../../assets/steps-1.svg'
 import steps2 from './../../assets/steps-2.svg'
 import steps3 from './../../assets/steps-3.svg'
@@ -51,9 +47,11 @@ import footer from './../../assets/footer.webp'
 import { Link } from 'react-router-dom';
 import { motion } from "motion/react"
 import Footer from '../../Components/Footer/Footer';
+import discoverData from '../../AfisDesination.json';
 
 function Index() {
-  const { t } = useTranslation();
+    const { t } = useTranslation();
+    const lang = "ru"
 
     return (
         <>
@@ -200,54 +198,27 @@ function Index() {
                     </div>
                 </motion.div>
                 <div className="row px-5 my-5 mx-0 gap-3 align-items-center justify-content-center">
-                    <motion.div className="col-lg-2 discover-card position-relative"
-                        initial={{ opacity: 0, x: 100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
-                        viewport={{ once: false, amount: 0.3 }}
-                    >
-                        <img src={DiscoverImg1} className='img-fluid' alt="" />
-                        <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                            <span><i className="bi bi-geo-alt-fill"></i> Adventure Park</span>
-                            <h2 className='mt-4'>Güvenli, kontrollü ve profesyonel rehber eşliğinde</h2>
-                        </div>
-                    </motion.div>
-                    <motion.div className="col-lg-2 discover-card position-relative"
-                        initial={{ opacity: 0, x: 100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.5 }}
-                        viewport={{ once: false, amount: 0.3 }}
-                    >
-                        <img src={DiscoverImg2} className='img-fluid' alt="" />
-                        <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                            <span><i className="bi bi-geo-alt-fill"></i> Buggy</span>
-                            <h2 className='mt-4'> Doğanın kalbinde hızın, heyecanın ve adrenalinin zirvesine ulaş!</h2>
-                        </div>
-                    </motion.div>
-                    <motion.div className="col-lg-2 discover-card position-relative"
-                        initial={{ opacity: 0, x: 100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.7 }}
-                        viewport={{ once: false, amount: 0.3 }}
-                    >
-                        <img src={DiscoverImg3} className='img-fluid' alt="" />
-                        <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                            <span><i className="bi bi-geo-alt-fill"></i> Fishing</span>
-                            <h2 className='mt-4'>Doğayla baş başa, keyifli ve sabır dolu bir balık tutma deneyimi seni bekliyor!</h2>
-                        </div>
-                    </motion.div>
-                    <motion.div className="col-lg-2 discover-card position-relative"
-                        initial={{ opacity: 0, x: 100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.9 }}
-                        viewport={{ once: false, amount: 0.3 }}
-                    >
-                        <img src={DiscoverImg4} className='img-fluid' alt="" />
-                        <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                            <span><i className="bi bi-geo-alt-fill"></i> Tazi Kanyonu</span>
-                            <h2 className='mt-4'> mor renklere boyanmış bir doğa şöleni seni bekliyor.</h2>
-                        </div>
-                    </motion.div>
+                    {discoverData.map((item, index) => {
+                        const t = item.translations?.[lang];
+                        if (!t) return null; // seçili dilde veri yoksa kartı gösterme
+
+                        return (
+                            <motion.div
+                                key={item.id}
+                                className="col-lg-2 discover-card position-relative"
+                                initial={{ opacity: 0, x: 100 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.6, delay: 0.3 + index * 0.2 }}
+                                viewport={{ once: false, amount: 0.3 }}
+                            >
+                                <img src={t.image} className="img-fluid" alt={t.name} />
+                                <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
+                                    <span><i className="bi bi-geo-alt-fill"></i> {t.name}</span>
+                                    <h2 className="mt-4">{t.pere}</h2>
+                                </div>
+                            </motion.div>
+                        );
+                    })}
                 </div>
             </div>
             {/* working Steps */}

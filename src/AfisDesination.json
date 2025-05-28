@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "days": {
+            "tr": "3 Gün",
+            "en": "3 Days",
+            "ru": "3 Дня"
+        },
+        "translations": {
+            "tr": {
+                "name": "Yamaç Paraşütü",
+                "pere": "Gökyüzünde özgürlüğü hisset.",
+                "image": "src/assets/Afis/tr/tazi.png"
+            },
+            "en": {
+                "name": "Paragliding",
+                "pere": "Feel the freedom in the sky.",
+                "image": "src/assets/Afis/en/tazi.png"
+            },
+            "ru": {
+                "name": "Парапланеризм",
+                "pere": "Почувствуй свободу в небе.",
+                "image": "src/assets/Afis/ru/tazi.png"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "days": {
+            "tr": "2 Gün",
+            "en": "2 Days",
+            "ru": "2 Дня"
+        },
+        "translations": {
+            "tr": {
+                "name": "Rafting",
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "src/assets/Afis/tr/rafting.png"
+            },
+            "en": {
+                "name": "Rafting",
+                "pere": "An adrenaline-filled river adventure.",
+                "image": "src/assets/Afis/en/rafting.png"
+            },
+            "ru": {
+                "name": "Рафтинг",
+                "pere": "Полное адреналина речное приключение.",
+                "image": "src/assets/Afis/ru/rafting.png"
+            }
+        }
+    },
+    {
+        "id": 3,
+        "days": {
+            "tr": "2 Gün",
+            "en": "2 Days",
+            "ru": "2 Дня"
+        },
+        "translations": {
+            "tr": {
+                "name": "Rafting",
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "src/assets/Afis/tr/adventure.png"
+            },
+            "en": {
+                "name": "Rafting",
+                "pere": "An adrenaline-filled river adventure.",
+                "image": "src/assets/Afis/en/adventure.png"
+            },
+            "ru": {
+                "name": "Рафтинг",
+                "pere": "Полное адреналина речное приключение.",
+                "image": "src/assets/Afis/ru/adventure.png"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "days": {
+            "tr": "2 Gün",
+            "en": "2 Days",
+            "ru": "2 Дня"
+        },
+        "translations": {
+            "tr": {
+                "name": "Rafting",
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "src/assets/Afis/tr/fishing.png"
+            },
+            "en": {
+                "name": "Rafting",
+                "pere": "An adrenaline-filled river adventure.",
+                "image": "src/assets/Afis/en/fishing.png"
+            },
+            "ru": {
+                "name": "Рафтинг",
+                "pere": "Полное адреналина речное приключение.",
+                "image": "src/assets/Afis/ru/fishing.png"
+            }
+        }
+    },
+    {
+        "id": 5,
+        "days": {
+            "tr": "2 Gün",
+            "en": "2 Days",
+            "ru": "2 Дня"
+        },
+        "translations": {
+            "tr": {
+                "name": "Rafting",
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "src/assets/Afis/tr/zipline.png"
+            },
+            "en": {
+                "name": "Rafting",
+                "pere": "An adrenaline-filled river adventure.",
+                "image": "src/assets/Afis/en/zipline.png"
+            },
+            "ru": {
+                "name": "Рафтинг",
+                "pere": "Полное адреналина речное приключение.",
+                "image": "src/assets/Afis/ru/zipline.png"
+            }
+        }
+    },
+    {
+        "id": 6,
+        "days": {
+            "tr": "2 Gün",
+            "en": "2 Days",
+            "ru": "2 Дня"
+        },
+        "translations": {
+            "tr": {
+                "name": "Rafting",
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "src/assets/Afis/tr/buggy.png"
+            },
+            "en": {
+                "name": "Rafting",
+                "pere": "An adrenaline-filled river adventure.",
+                "image": "src/assets/Afis/en/buggy.png"
+            },
+            "ru": {
+                "name": "Рафтинг",
+                "pere": "Полное адреналина речное приключение.",
+                "image": "src/assets/Afis/ru/buggy.png"
+            }
+        }
+    },
+    {
+        "id": 7,
+        "days": {
+            "tr": "2 Gün",
+            "en": "2 Days",
+            "ru": "2 Дня"
+        },
+        "translations": {
+            "tr": {
+                "name": "Rafting",
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "src/assets/Afis/tr/safari.png"
+            },
+            "en": {
+                "name": "Rafting",
+                "pere": "An adrenaline-filled river adventure.",
+                "image": "src/assets/Afis/en/safari.png"
+            },
+            "ru": {
+                "name": "Рафтинг",
+                "pere": "Полное адреналина речное приключение.",
+                "image": "src/assets/Afis/ru/safari.png"
+            }
+        }
+    },
+    {
+        "id": 8,
+        "days": {
+            "tr": "2 Gün",
+            "en": "2 Days",
+            "ru": "2 Дня"
+        },
+        "translations": {
+            "tr": {
+                "name": "Rafting",
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "src/assets/Afis/tr/lavander.png"
+            },
+            "en": {
+                "name": "Rafting",
+                "pere": "An adrenaline-filled river adventure.",
+                "image": "src/assets/Afis/en/lavander.png"
+            },
+            "ru": {
+                "name": "Рафтинг",
+                "pere": "Полное адреналина речное приключение.",
+                "image": "src/assets/Afis/ru/lavander.png"
+            }
+        }
+    }
+]
