@@ -9,7 +9,8 @@
         "translations": {
             "tr": {
                 "name": "Yamaç Paraşütü",
-                "pere": "Gökyüzünde özgürlüğü hisset.",                "image": "Images/Afis/tr/tazi.png"
+                "pere": "Gökyüzünde özgürlüğü hisset.",
+                "image": "Images/Afis/tr/tazi.png"
             },
             "en": {
                 "name": "Paragliding",
@@ -33,7 +34,8 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/rafting.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "Images/Afis/tr/rafting.png"
             },
             "en": {
                 "name": "Rafting",
@@ -57,7 +59,8 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/adventure.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "Images/Afis/tr/adventure.png"
             },
             "en": {
                 "name": "Rafting",
@@ -81,7 +84,8 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/fishing.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "Images/Afis/tr/fishing.png"
             },
             "en": {
                 "name": "Rafting",
@@ -105,7 +109,8 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/zipline.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "Images/Afis/tr/zipline.png"
             },
             "en": {
                 "name": "Rafting",
@@ -129,7 +134,8 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/buggy.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "Images/Afis/tr/buggy.png"
             },
             "en": {
                 "name": "Rafting",
@@ -153,7 +159,8 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/safari.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "Images/Afis/tr/safari.png"
             },
             "en": {
                 "name": "Rafting",
@@ -177,7 +184,8 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/lavander.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "image": "Images/Afis/tr/lavander.png"
             },
             "en": {
                 "name": "Rafting",

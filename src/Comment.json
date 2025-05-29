@@ -1,8 +1,8 @@
     [
         {
             "id": 1,
-            "image": "src/assets/tst-image-1.webp",
-            "quoteImage": "src/assets/quote-left.png",
+            "image": "Images/Comment/tst-image-1.webp",
+            "quoteImage": "Images/Comment/quote-left.png",
             "text": {
                 "tr": "MC Raft sayesinde sadece bir gün değil, hayat boyu unutamayacağımız anılar biriktirdik. Jeep safari ve zipline inanılmazdı! Organizasyon kusursuzdu, ekip çok ilgiliydi. Tüm arkadaşlarımıza tavsiye ediyoruz.",
                 "en": "Thanks to MC Raft, we collected unforgettable memories not just for one day, but for a lifetime. Jeep safari and zipline were incredible! The organization was flawless, and the team was very attentive. We recommend it to all our friends.",
@@ -15,13 +15,13 @@
                     "tr": "Antalya / Türkiye",
                     "en": "Antalya / Turkey"
                 },
-                "avatar": "src/assets/tst-3.webp"
+                "avatar": "Images/Comment/tst-3.webp"
             }
         },
         {
             "id": 2,
-            "image": "src/assets/tst-image-1.webp",
-            "quoteImage": "src/assets/quote-left.png",
+            "image": "Images/Comment/tst-image-1.webp",
+            "quoteImage": "Images/Comment/quote-left.png",
             "text": {
                 "tr": "Bu seyahat acentesiyle rezervasyon yapmak hayatımızı değiştirdi. Titiz planlamaları ve kişiselleştirilmiş yaklaşımları sayesinde seyahatimiz sadece bir tatil değil, unutulmaz anlar koleksiyonu oldu.",
                 "en": "Booking with this travel agency was a game changer. Their meticulous planning and personalized approach made our trip not just a vacation but a collection of unforgettable moments.",
@@ -35,7 +35,7 @@
                     "en": "Web Developer at ThemeXriver",
                     "ru": "Веб-разработчик в ThemeXriver"
                 },
-                "avatar": "src/assets/tst-2.webp"
+                "avatar": "Images/Comment/tst-2.webp"
             }
         }
     ]
