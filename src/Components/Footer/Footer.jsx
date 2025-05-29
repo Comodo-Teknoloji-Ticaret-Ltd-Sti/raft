@@ -33,7 +33,7 @@ function Footer() {
                             </div>
                             <div className="footer-social col-md-3">
                                 <p><i className="fas fa-phone-alt me-2"></i>+90 533 153 02 29</p>
-                                <p><i className="fas fa-envelope me-2"></i>info@macerapark.com</p>
+                                <p><i className="fas fa-envelope me-2"></i>info.mcoutdoor@gmail.com</p>
                                 <div className="mt-3 footer-icons">
                                     <a href="#" className="text-dark me-3"><i className="fab fa-facebook-f"></i></a>
                                     <a href="#" className="text-dark me-3"><i className="fab fa-instagram"></i></a>

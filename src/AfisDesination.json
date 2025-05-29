@@ -8,18 +8,18 @@
         },
         "translations": {
             "tr": {
-                "name": "Yamaç Paraşütü",
-                "pere": "Gökyüzünde özgürlüğü hisset.",
+                "name": "Tazı Kanyonu",
+                "pere": "Doğada muhteşem manzaralar eşliğinde yürüyüş.",
                 "image": "Images/Afis/tr/tazi.png"
             },
             "en": {
-                "name": "Paragliding",
-                "pere": "Feel the freedom in the sky.",
+                "name": "Tazı Canyon",
+                "pere": "Hiking with stunning views.",
                 "image": "Images/Afis/en/tazi.png"
             },
             "ru": {
-                "name": "Парапланеризм",
-                "pere": "Почувствуй свободу в небе.",
+                "name": "Тур по каньону Тазы",
+                "pere": "Поход с великолепными видами.",
                 "image": "Images/Afis/ru/tazi.png"
             }
         }
@@ -58,18 +58,18 @@
         },
         "translations": {
             "tr": {
-                "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "name": "Macera Parkı",
+                "pere": "Zipline ve tırmanma ile dolu eğlence.",
                 "image": "Images/Afis/tr/adventure.png"
             },
             "en": {
-                "name": "Rafting",
-                "pere": "An adrenaline-filled river adventure.",
+                "name": "Adventure Park",
+                "pere": "Fun with zipline and climbing.",
                 "image": "Images/Afis/en/adventure.png"
             },
             "ru": {
-                "name": "Рафтинг",
-                "pere": "Полное адреналина речное приключение.",
+                "name": "Парк приключений",
+                "pere": "Веселье с зиплайном и скалолазанием.",
                 "image": "Images/Afis/ru/adventure.png"
             }
         }
@@ -83,18 +83,18 @@
         },
         "translations": {
             "tr": {
-                "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "name": "Balık Tutma ",
+                "pere": "Sakin doğada balık tutmanın keyfi.",
                 "image": "Images/Afis/tr/fishing.png"
             },
             "en": {
-                "name": "Rafting",
-                "pere": "An adrenaline-filled river adventure.",
+                "name": "Fishing ",
+                "pere": "Peaceful fishing in nature.",
                 "image": "Images/Afis/en/fishing.png"
             },
             "ru": {
-                "name": "Рафтинг",
-                "pere": "Полное адреналина речное приключение.",
+                "name": "Удовольствие от рыбалки",
+                "pere": "Тихая рыбалка на природе.",
                 "image": "Images/Afis/ru/fishing.png"
             }
         }
@@ -108,18 +108,18 @@
         },
         "translations": {
             "tr": {
-                "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "name": "Zipline",
+                "pere": "Yüksekten hızla kaymanın heyecanı.",
                 "image": "Images/Afis/tr/zipline.png"
             },
             "en": {
-                "name": "Rafting",
-                "pere": "An adrenaline-filled river adventure.",
+                "name": "Zipline",
+                "pere": "Thrill of speeding down from heights.",
                 "image": "Images/Afis/en/zipline.png"
             },
             "ru": {
-                "name": "Рафтинг",
-                "pere": "Полное адреналина речное приключение.",
+                "name": "Зиплайн",
+                "pere": "Азарт скоростного спуска с высоты.",
                 "image": "Images/Afis/ru/zipline.png"
             }
         }
@@ -133,18 +133,18 @@
         },
         "translations": {
             "tr": {
-                "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "name": "Buggy",
+                "pere": "Zorlu arazide heyecanlı buggy deneyimi.",
                 "image": "Images/Afis/tr/buggy.png"
             },
             "en": {
-                "name": "Rafting",
-                "pere": "An adrenaline-filled river adventure.",
+                "name": "Buggy Tours",
+                "pere": "Exciting buggy experience on tough terrain.",
                 "image": "Images/Afis/en/buggy.png"
             },
             "ru": {
-                "name": "Рафтинг",
-                "pere": "Полное адреналина речное приключение.",
+                "name": "Туры на багги",
+                "pere": "Захватывающий опыт на багги.",
                 "image": "Images/Afis/ru/buggy.png"
             }
         }
@@ -158,18 +158,18 @@
         },
         "translations": {
             "tr": {
-                "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "name": "Jeep Safari",
+                "pere": "Keşfedilmemiş rotalarda jeep macerası.",
                 "image": "Images/Afis/tr/safari.png"
             },
             "en": {
-                "name": "Rafting",
-                "pere": "An adrenaline-filled river adventure.",
+                "name": "Jeep Safari",
+                "pere": "Jeep adventure on undiscovered routes.",
                 "image": "Images/Afis/en/safari.png"
             },
             "ru": {
-                "name": "Рафтинг",
-                "pere": "Полное адреналина речное приключение.",
+                "name": "Джип-сафари",
+                "pere": "Приключение на джипе.",
                 "image": "Images/Afis/ru/safari.png"
             }
         }
@@ -183,18 +183,18 @@
         },
         "translations": {
             "tr": {
-                "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",
+                "name": "Lavanta Bahçesi",
+                "pere": "Lavanta kokularıyla huzurlu gün.",
                 "image": "Images/Afis/tr/lavander.png"
             },
             "en": {
-                "name": "Rafting",
-                "pere": "An adrenaline-filled river adventure.",
+                "name": "Lavender Garden",
+                "pere": "Peaceful day with lavender scent.",
                 "image": "Images/Afis/en/lavander.png"
             },
             "ru": {
-                "name": "Рафтинг",
-                "pere": "Полное адреналина речное приключение.",
+                "name": "Тур по лавандовым садам",
+                "pere": "Спокойный день с лавандой.",
                 "image": "Images/Afis/ru/lavander.png"
             }
         }

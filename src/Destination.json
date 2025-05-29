@@ -1,7 +1,11 @@
 [
     {
         "id": 1,
-        "price": "₺800",
+        "buy": {
+            "tr": "Satın Al",
+            "en": "Buy Now",
+            "ru": "Купить"
+        },
         "days": {
             "tr": "Her gün 3 seans",
             "en": "3 sessions daily",
@@ -32,7 +36,11 @@
     },
     {
         "id": 2,
-        "price": "₺600",
+        "buy": {
+            "tr": "Satın Al",
+            "en": "Buy Now",
+            "ru": "Купить"
+        },
         "days": {
             "tr": "09:00 - 18:00 arası",
             "en": "From 09:00 to 18:00",
@@ -63,7 +71,11 @@
     },
     {
         "id": 3,
-        "price": "₺400",
+        "buy": {
+            "tr": "Satın Al",
+            "en": "Buy Now",
+            "ru": "Купить"
+        },
         "days": {
             "tr": "Sabah & Akşam Seansları",
             "en": "Morning & Evening Sessions",
@@ -94,7 +106,11 @@
     },
     {
         "id": 4,
-        "price": "₺650",
+        "buy": {
+            "tr": "Satın Al",
+            "en": "Buy Now",
+            "ru": "Купить"
+        },
         "days": {
             "tr": "Gün boyu turlar",
             "en": "All-day tours",
@@ -125,7 +141,11 @@
     },
     {
         "id": 5,
-        "price": "₺700",
+        "buy": {
+            "tr": "Satın Al",
+            "en": "Buy Now",
+            "ru": "Купить"
+        },
         "days": {
             "tr": "Sabah ve Öğlen Turları",
             "en": "Morning and Noon Tours",
@@ -156,7 +176,11 @@
     },
     {
         "id": 6,
-        "price": "₺300",
+        "buy": {
+            "tr": "Satın Al",
+            "en": "Buy Now",
+            "ru": "Купить"
+        },
         "days": {
             "tr": "Sabah ve Öğleden sonra",
             "en": "Morning and Afternoon",
@@ -187,7 +211,11 @@
     },
     {
         "id": 7,
-        "price": "₺500",
+        "buy": {
+            "tr": "Satın Al",
+            "en": "Buy Now",
+            "ru": "Купить"
+        },
         "days": {
             "tr": "Sabah ve Öğlen Seansları",
             "en": "Morning and Noon Sessions",
@@ -218,7 +246,11 @@
     },
     {
         "id": 8,
-        "price": "₺450",
+        "buy": {
+            "tr": "Satın Al",
+            "en": "Buy Now",
+            "ru": "Купить"
+        },
         "days": {
             "tr": "09:00 - 19:00 arası",
             "en": "From 09:00 to 19:00",

@@ -167,7 +167,7 @@ function Index() {
                                     <div className="dest-card position-relative">
                                         <div className="dest-img overflow-hidden rounded">
                                             <img src={t.image} className='img-fluid' alt={t.name} />
-                                            <span className="dest-price position-absolute top-0 end-0">{dest.price}</span>
+                                            <span className="dest-price position-absolute top-0 end-0"> {dest.buy?.[i18n.language]}</span>
                                         </div>
                                         <div className="dest-content p-4 rounded border top-0 start-0 mt-3 position-absolute">
                                             <i className="fa-solid fa-arrow-right dest-arrow position-absolute"></i>
