@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 import blogAuthor from './../../assets/blog-author.jpeg';
-import blog1 from './../../assets/buggy_1.jpg';
-import blog2 from './../../assets/fishing_1.jpg';
-import blog3 from './../../assets/hiking_1.jpg';
-import blog4 from './../../assets/nature_1.jpg';
-import blog5 from './../../assets/fishing_2.jpg';
+import activitiesData from './../../Activities.json';
 
 import galleryimage1 from '../../assets/gallery-image1.webp';
 import galleryimage2 from '../../assets/gallery-image2.webp';
@@ -18,58 +15,30 @@ import galleryimage5 from '../../assets/gallery-image5.webp';
 
 function Blog() {
     const [selectedCategory, setSelectedCategory] = useState('all');
+    const { t, i18n } = useTranslation();
     
-    const blogData = [
-        {
-            id: 1,
-            image: blog1,
-            title: "Buggy Turu: Maceranın ve Özgürlüğün Tadını Çıkarın!",
-            category: "Adrenalin",
-            description: "Doğanın kalbinde, tozlu yollar ve engebeli arazilerde buggy turu ile unutulmaz bir maceraya hazır mısınız? Adrenalin dolu bu deneyimde, özgürlüğü ve heyecanı bir arada yaşayacak, eşsiz manzaralar eşliğinde yolculuğun keyfini süreceksiniz!"
-        },
-        {
-            id: 2,
-            image: blog2,
-            title: "Balıkçılık: Oltalar Hazır Mı?",
-            category: "Hobi",
-            description: "Göl kenarında huzurlu bir atmosferde, sevdiklerinizle birlikte balık tutmaya ne dersiniz?. Doğanın sakinliği ve suyun dinginliğiyle, hayatın stresinden uzaklaşarak unutulmaz anılar biriktirin!"
-        },
-        {
-            id: 3,
-            image: blog3,
-            title: "Experience the World with Our Travel Company",
-            category: "Doğa",
-            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
-        },
-        {
-            id: 4,
-            image: blog4,
-            title: "Lavanta Bahçesi Turu: Doğanın Renkleri ve Huzuru",
-            category: "Doğa",
-            description: "Mis kokulu lavanta tarlalarında yürüyüş yaparak doğanın huzurunu keşfedin. Morun en güzel tonları arasında keyifli anlar yaşarken, fotoğraf çekmeyi ve bu özel atmosferin tadını çıkarmayı unutmayın."
-        },
-        {
-            id: 5,
-            image: blog5,
-            title: "Assertively iterate resource maximizing",
-            category: "Hobi",
-            description: "Non libero hac commodo torquent finibus metus. Duis in nisi diam nunc habitasse lorem elit. Ante porta accumsan sociosqu faucibus ultrices posuere."
-        }
-    ];
+    const activities = activitiesData.map(activity => ({
+        id: activity.id,
+        image: activity.translations[i18n.language].image,
+        title: activity.translations[i18n.language].title,
+        category: activity.category[i18n.language],
+        description: activity.translations[i18n.language].description
+    }));
 
     const filterByCategory = (category) => {
         setSelectedCategory(category);
     };
 
-    const filteredBlogs = selectedCategory === 'all' 
-        ? blogData 
-        : blogData.filter(blog => blog.category === selectedCategory);
+    const filteredActivities = selectedCategory === 'all' 
+        ? activities 
+        : activities.filter(activity => activity.category === selectedCategory);
 
-    const categories = [
-        { name: "Adrenalin", count: blogData.filter(blog => blog.category === "Adrenalin").length },
-        { name: "Doğa", count: blogData.filter(blog => blog.category === "Doğa").length },
-        { name: "Hobi", count: blogData.filter(blog => blog.category === "Hobi").length },
-    ];
+    const uniqueCategories = [...new Set(activities.map(activity => activity.category))].map(
+        category => ({
+            name: category,
+            count: activities.filter(activity => activity.category === category).length
+        })
+    );
 
     return (
         <>
@@ -77,26 +46,27 @@ function Blog() {
             <div className="section-banner w-100">
                 <div className="container">
                     <div className="section-banner-content">
-                        <h2>Aktiviteler</h2>
+                        <h2>{t('common.activities')}</h2>
                         <ul>
                             <li>
-                                <Link to="/">Anasayfa</Link> &nbsp;
+                                <Link to="/">{t('nav.home')}</Link> &nbsp;
                             </li>
                             <li>
                                 <i className="bi bi-gear fs-6 pe-2"></i>
-                                Aktiviteler
+                                {t('nav.activities')}
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <section className="blog py-5">
-                <div className="container">                    <div className="row g-4 blog-page">
+                <div className="container">                    
+                    <div className="row g-4 blog-page">
                         <div className="col-12 mb-4">
                             <div className="categories-card border-0 p-3 bg-light rounded">
-                                <h5 className="fw-bold mb-3">Kategoriler</h5>
+                                <h5 className="fw-bold mb-3">{t('common.categories')}</h5>
                                 <ul className="list-group list-group-horizontal flex-wrap">
-                                    {categories.map(category => (
+                                    {uniqueCategories.map(category => (
                                         <li
                                             key={category.name}
                                             className={`list-group-item border me-2 mb-2 rounded ${selectedCategory === category.name ? 'bg-primary text-white' : 'bg-white'}`}
@@ -117,44 +87,45 @@ function Blog() {
                                     >
                                         <div className="d-flex align-items-center">
                                             <i className="bi bi-asterisk me-2"></i>
-                                            <span>Tümü</span>
-                                            <span className="ms-2 badge bg-secondary">{blogData.length}</span>
+                                            <span>{t('common.all')}</span>
+                                            <span className="ms-2 badge bg-secondary">{activities.length}</span>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-lg-8">
-                            {filteredBlogs.map(blog => (
-                                <div className="col-lg-12" key={blog.id}>
+                            {filteredActivities.map(activity => (
+                                <div className="col-lg-12" key={activity.id}>
                                     <div className="blog-card mb-4 shadow">
-                                        <img src={blog.image} className="card-img-top img-fluid" alt="Blog Image" />
+                                        <img src={activity.image} className="card-img-top img-fluid" alt={activity.title} />
                                         <div className="blog-card-body p-4">
                                             <div className="d-flex align-items-center justify-content-between mb-3">
                                                 <div className="blog-img mt-4">
                                                     <img src={blogAuthor} className="me-3" alt="Author" />
                                                 </div>
                                             </div>
-                                            <h3 className="card-title fw-bold mb-3">{blog.title}</h3>                                            
-                                            <p className="card-text mb-3">{blog.description}</p>
+                                            <h3 className="card-title fw-bold mb-3">{activity.title}</h3>                                            
+                                            <p className="card-text mb-3">{activity.description}</p>
                                             <a style={{ cursor: 'pointer' }}>
-                                                {blog.category} <i className="bi bi-tag-fill ms-2"></i>
+                                                {activity.category} <i className="bi bi-tag-fill ms-2"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             ))}
                         </div>
-                        <div className="col-lg-4">                            <div className="recent-card">
-                                <h4>Recent Post</h4>
-                                {blogData.slice(0, 4).map(blog => (
-                                    <div className="d-flex mb-4" key={blog.id}>
-                                        <img src={blog.image} className="me-3 img-fluid" alt="Post Image" />
+                        <div className="col-lg-4">                            
+                            <div className="recent-card">
+                                <h4>{t('common.recentPosts')}</h4>
+                                {activities.slice(0, 4).map(activity => (
+                                    <div className="d-flex mb-4" key={activity.id}>
+                                        <img src={activity.image} className="me-3 img-fluid" alt={activity.title} />
                                         <div>
                                             <small className="d-block">
-                                                <i className="bi bi-calendar2-week me-1"></i> May 11, 2024
+                                                <i className="bi bi-calendar2-week me-1"></i> {new Date().toLocaleDateString()}
                                             </small>
-                                            <p className="text-decoration-none">{blog.title}</p>
+                                            <p className="text-decoration-none">{activity.title}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -162,7 +133,7 @@ function Blog() {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
             
             {/* gallery section */}
             <section className="gallery-grid my-5 mb-0">
