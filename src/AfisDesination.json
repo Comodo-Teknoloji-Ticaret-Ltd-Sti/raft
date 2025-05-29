@@ -9,17 +9,17 @@
         "translations": {
             "tr": {
                 "name": "Yamaç Paraşütü",
-                "pere": "Gökyüzünde özgürlüğü hisset.",                "image": "/Images/Afis/tr/tazi.png"
+                "pere": "Gökyüzünde özgürlüğü hisset.",                "image": "Images/Afis/tr/tazi.png"
             },
             "en": {
                 "name": "Paragliding",
                 "pere": "Feel the freedom in the sky.",
-                "image": "/Images/Afis/en/tazi.png"
+                "image": "Images/Afis/en/tazi.png"
             },
             "ru": {
                 "name": "Парапланеризм",
                 "pere": "Почувствуй свободу в небе.",
-                "image": "/Images/Afis/ru/tazi.png"
+                "image": "Images/Afis/ru/tazi.png"
             }
         }
     },
@@ -33,17 +33,17 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "/Images/Afis/tr/rafting.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/rafting.png"
             },
             "en": {
                 "name": "Rafting",
                 "pere": "An adrenaline-filled river adventure.",
-                "image": "/Images/Afis/en/rafting.png"
+                "image": "Images/Afis/en/rafting.png"
             },
             "ru": {
                 "name": "Рафтинг",
                 "pere": "Полное адреналина речное приключение.",
-                "image": "/Images/Afis/ru/rafting.png"
+                "image": "Images/Afis/ru/rafting.png"
             }
         }
     },
@@ -57,17 +57,17 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "/Images/Afis/tr/adventure.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/adventure.png"
             },
             "en": {
                 "name": "Rafting",
                 "pere": "An adrenaline-filled river adventure.",
-                "image": "/Images/Afis/en/adventure.png"
+                "image": "Images/Afis/en/adventure.png"
             },
             "ru": {
                 "name": "Рафтинг",
                 "pere": "Полное адреналина речное приключение.",
-                "image": "/Images/Afis/ru/adventure.png"
+                "image": "Images/Afis/ru/adventure.png"
             }
         }
     },
@@ -81,17 +81,17 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "/Images/Afis/tr/fishing.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/fishing.png"
             },
             "en": {
                 "name": "Rafting",
                 "pere": "An adrenaline-filled river adventure.",
-                "image": "/Images/Afis/en/fishing.png"
+                "image": "Images/Afis/en/fishing.png"
             },
             "ru": {
                 "name": "Рафтинг",
                 "pere": "Полное адреналина речное приключение.",
-                "image": "/Images/Afis/ru/fishing.png"
+                "image": "Images/Afis/ru/fishing.png"
             }
         }
     },
@@ -105,17 +105,17 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "/Images/Afis/tr/zipline.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/zipline.png"
             },
             "en": {
                 "name": "Rafting",
                 "pere": "An adrenaline-filled river adventure.",
-                "image": "/Images/Afis/en/zipline.png"
+                "image": "Images/Afis/en/zipline.png"
             },
             "ru": {
                 "name": "Рафтинг",
                 "pere": "Полное адреналина речное приключение.",
-                "image": "/Images/Afis/ru/zipline.png"
+                "image": "Images/Afis/ru/zipline.png"
             }
         }
     },
@@ -129,17 +129,17 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "/Images/Afis/tr/buggy.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/buggy.png"
             },
             "en": {
                 "name": "Rafting",
                 "pere": "An adrenaline-filled river adventure.",
-                "image": "/Images/Afis/en/buggy.png"
+                "image": "Images/Afis/en/buggy.png"
             },
             "ru": {
                 "name": "Рафтинг",
                 "pere": "Полное адреналина речное приключение.",
-                "image": "/Images/Afis/ru/buggy.png"
+                "image": "Images/Afis/ru/buggy.png"
             }
         }
     },
@@ -153,17 +153,17 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "/Images/Afis/tr/safari.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/safari.png"
             },
             "en": {
                 "name": "Rafting",
                 "pere": "An adrenaline-filled river adventure.",
-                "image": "/Images/Afis/en/safari.png"
+                "image": "Images/Afis/en/safari.png"
             },
             "ru": {
                 "name": "Рафтинг",
                 "pere": "Полное адреналина речное приключение.",
-                "image": "/Images/Afis/ru/safari.png"
+                "image": "Images/Afis/ru/safari.png"
             }
         }
     },
@@ -177,17 +177,17 @@
         "translations": {
             "tr": {
                 "name": "Rafting",
-                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "/Images/Afis/tr/lavander.png"
+                "pere": "Adrenalin dolu nehir yolculuğu.",                "image": "Images/Afis/tr/lavander.png"
             },
             "en": {
                 "name": "Rafting",
                 "pere": "An adrenaline-filled river adventure.",
-                "image": "/Images/Afis/en/lavander.png"
+                "image": "Images/Afis/en/lavander.png"
             },
             "ru": {
                 "name": "Рафтинг",
                 "pere": "Полное адреналина речное приключение.",
-                "image": "/Images/Afis/ru/lavander.png"
+                "image": "Images/Afis/ru/lavander.png"
             }
         }
     }
