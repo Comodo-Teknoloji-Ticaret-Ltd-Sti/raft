@@ -20,10 +20,10 @@ const resources = {
 
 i18n
   .use(LanguageDetector)
-  .use(initReactI18next)
-  .init({
+  .use(initReactI18next)  .init({
     resources,
-    fallbackLng: 'tr',
+    fallbackLng: 'en',
+    lng: 'en', // Set English as the default language
     interpolation: {
       escapeValue: false,
     },
