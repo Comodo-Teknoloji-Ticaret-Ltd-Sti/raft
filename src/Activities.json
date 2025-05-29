@@ -6,18 +6,21 @@
             "en": "Adventure",
             "ru": "Приключения"
         },
-        "translations": {            "tr": {
+        "translations": {
+            "tr": {
                 "title": "Buggy Turu: Maceranın ve Özgürlüğün Tadını Çıkarın!",
                 "description": "Doğanın kalbinde, tozlu yollar ve engebeli arazilerde buggy turu ile unutulmaz bir maceraya hazır mısınız? Adrenalin dolu bu deneyimde, özgürlüğü ve heyecanı bir arada yaşayacak, eşsiz manzaralar eşliğinde yolculuğun keyfini süreceksiniz!",
-                "image": "/Images/buggy.jpg"
-            },            "en": {
+                "image": "Images/buggy.jpg"
+            },
+            "en": {
                 "title": "Buggy Tour: Experience Freedom and Adventure!",
                 "description": "Are you ready for an unforgettable adventure with a buggy tour through dusty roads and rough terrain in the heart of nature? In this adrenaline-filled experience, you'll enjoy freedom and excitement together, enjoying the journey with unique landscapes!",
-                "image": "/Images/buggy.jpg"
-            },            "ru": {
+                "image": "Images/buggy.jpg"
+            },
+            "ru": {
                 "title": "Тур на багги: Почувствуйте свободу и приключения!",
                 "description": "Готовы к незабываемому приключению на багги по пыльным дорогам и пересеченной местности в самом сердце природы? В этом полном адреналина опыте вы насладитесь свободой и волнением вместе с уникальными пейзажами!",
-                "image": "/Images/buggy.jpg"
+                "image": "Images/buggy.jpg"
             }
         }
     },
@@ -28,18 +31,21 @@
             "en": "Hobby",
             "ru": "Хобби"
         },
-        "translations": {            "tr": {
+        "translations": {
+            "tr": {
                 "title": "Balıkçılık: Oltalar Hazır Mı?",
                 "description": "Göl kenarında huzurlu bir atmosferde, sevdiklerinizle birlikte balık tutmaya ne dersiniz? Doğanın sakinliği ve suyun dinginliğiyle, hayatın stresinden uzaklaşarak unutulmaz anılar biriktirin!",
-                "image": "/Images/fishing.jpg"
-            },            "en": {
+                "image": "Images/fishing.jpg"
+            },
+            "en": {
                 "title": "Fishing: Are the Rods Ready?",
                 "description": "How about fishing with your loved ones in a peaceful atmosphere by the lake? Get away from the stress of life and build unforgettable memories with the serenity of nature and the calmness of water!",
-                "image": "/Images/fishing.jpg"
-            },            "ru": {
+                "image": "Images/fishing.jpg"
+            },
+            "ru": {
                 "title": "Рыбалка: Готовы удочки?",
                 "description": "Как насчет рыбалки с близкими в спокойной атмосфере у озера? Отвлекитесь от стресса жизни и создайте незабываемые воспоминания с безмятежностью природы и спокойствием воды!",
-                "image": "/Images/fishing.jpg"
+                "image": "Images/fishing.jpg"
             }
         }
     },
@@ -50,18 +56,21 @@
             "en": "Nature",
             "ru": "Природа"
         },
-        "translations": {            "tr": {
+        "translations": {
+            "tr": {
                 "title": "Kano Deneyimi",
                 "description": "Akarsularda kano ile keyifli bir macera sizi bekliyor. Doğayla iç içe, su üzerinde özgürce kayarak yeni keşiflere hazır olun!",
-                "image": "/Images/boat_river_1.jpg"
-            },            "en": {
+                "image": "Images/boat_river_1.jpg"
+            },
+            "en": {
                 "title": "Canoe Experience",
                 "description": "An enjoyable adventure with a canoe on rivers awaits you. Be ready for new discoveries while freely gliding on water, immersed in nature!",
-                "image": "/Images/boat_river_1.jpg"
-            },            "ru": {
+                "image": "Images/boat_river_1.jpg"
+            },
+            "ru": {
                 "title": "Опыт каноэ",
                 "description": "Вас ждет приятное приключение на каноэ по рекам. Будьте готовы к новым открытиям, свободно скользя по воде, погружаясь в природу!",
-                "image": "/Images/boat_river_1.jpg"
+                "image": "Images/boat_river_1.jpg"
             }
         }
     },
@@ -72,18 +81,21 @@
             "en": "Nature",
             "ru": "Природа"
         },
-        "translations": {            "tr": {
+        "translations": {
+            "tr": {
                 "title": "Lavanta Bahçesi Turu: Doğanın Renkleri ve Huzuru",
                 "description": "Mis kokulu lavanta tarlalarında yürüyüş yaparak doğanın huzurunu keşfedin. Morun en güzel tonları arasında keyifli anlar yaşarken, fotoğraf çekmeyi ve bu özel atmosferin tadını çıkarmayı unutmayın.",
-                "image": "/Images/lavander.jpg"
-            },            "en": {
+                "image": "Images/lavander.jpg"
+            },
+            "en": {
                 "title": "Lavender Garden Tour: Colors and Peace of Nature",
                 "description": "Discover the peace of nature by walking in fragrant lavender fields. Don't forget to take photos and enjoy the special atmosphere while having pleasant moments among the most beautiful shades of purple.",
-                "image": "/Images/lavander.jpg"
-            },            "ru": {
+                "image": "Images/lavander.jpg"
+            },
+            "ru": {
                 "title": "Тур по лавандовому саду: Краски и спокойствие природы",
                 "description": "Откройте для себя умиротворение природы, прогуливаясь по душистым лавандовым полям. Не забудьте сделать фотографии и насладиться особой атмосферой, проводя приятные моменты среди красивейших оттенков фиолетового.",
-                "image": "/Images/lavander.jpg"
+                "image": "Images/lavander.jpg"
             }
         }
     },
@@ -94,18 +106,21 @@
             "en": "Nature",
             "ru": "Природа"
         },
-        "translations": {            "tr": {
+        "translations": {
+            "tr": {
                 "title": "Nehir Yürüyüşü Macerası",
                 "description": "Nehir kenarında doğa yürüyüşü yaparak, eşsiz manzaraların ve doğal yaşamın tadını çıkarın. Her adımda yeni bir keşif sizi bekliyor!",
-                "image": "/Images/river_hiking_1.jpg"
-            },            "en": {
+                "image": "Images/river_hiking_1.jpg"
+            },
+            "en": {
                 "title": "River Hiking Adventure",
                 "description": "Enjoy unique landscapes and natural life by hiking along the river. A new discovery awaits you at every step!",
-                "image": "/Images/river_hiking_1.jpg"
-            },            "ru": {
+                "image": "Images/river_hiking_1.jpg"
+            },
+            "ru": {
                 "title": "Приключение пешего похода вдоль реки",
                 "description": "Наслаждайтесь уникальными пейзажами и природной жизнью во время пешей прогулки вдоль реки. Новое открытие ждет вас на каждом шагу!",
-                "image": "/Images/river_hiking_1.jpg"
+                "image": "Images/river_hiking_1.jpg"
             }
         }
     }
