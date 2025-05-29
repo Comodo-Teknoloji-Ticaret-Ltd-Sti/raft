@@ -16,7 +16,7 @@ import galleryimage5 from '../../assets/gallery-image5.webp';
 function Blog() {
     const [selectedCategory, setSelectedCategory] = useState('all');
     const { t, i18n } = useTranslation();
-    
+
     const activities = activitiesData.map(activity => ({
         id: activity.id,
         image: activity.translations[i18n.language].image,
@@ -29,8 +29,8 @@ function Blog() {
         setSelectedCategory(category);
     };
 
-    const filteredActivities = selectedCategory === 'all' 
-        ? activities 
+    const filteredActivities = selectedCategory === 'all'
+        ? activities
         : activities.filter(activity => activity.category === selectedCategory);
 
     const uniqueCategories = [...new Set(activities.map(activity => activity.category))].map(
@@ -46,7 +46,7 @@ function Blog() {
             <div className="section-banner w-100">
                 <div className="container">
                     <div className="section-banner-content">
-                        <h2>{t('common.activities')}</h2>
+                        <h2>{t('activit')}</h2>
                         <ul>
                             <li>
                                 <Link to="/">{t('nav.home')}</Link> &nbsp;
@@ -60,11 +60,11 @@ function Blog() {
                 </div>
             </div>
             <section className="blog py-5">
-                <div className="container">                    
+                <div className="container">
                     <div className="row g-4 blog-page">
                         <div className="col-12 mb-4">
                             <div className="categories-card border-0 p-3 bg-light rounded">
-                                <h5 className="fw-bold mb-3">{t('common.categories')}</h5>
+                                <h5 className="fw-bold mb-3">{t('categories')}</h5>
                                 <ul className="list-group list-group-horizontal flex-wrap">
                                     {uniqueCategories.map(category => (
                                         <li
@@ -87,7 +87,7 @@ function Blog() {
                                     >
                                         <div className="d-flex align-items-center">
                                             <i className="bi bi-asterisk me-2"></i>
-                                            <span>{t('common.all')}</span>
+                                            <span>{t('all')}</span>
                                             <span className="ms-2 badge bg-secondary">{activities.length}</span>
                                         </div>
                                     </li>
@@ -105,7 +105,7 @@ function Blog() {
                                                     <img src={blogAuthor} className="me-3" alt="Author" />
                                                 </div>
                                             </div>
-                                            <h3 className="card-title fw-bold mb-3">{activity.title}</h3>                                            
+                                            <h3 className="card-title fw-bold mb-3">{activity.title}</h3>
                                             <p className="card-text mb-3">{activity.description}</p>
                                             <a style={{ cursor: 'pointer' }}>
                                                 {activity.category} <i className="bi bi-tag-fill ms-2"></i>
@@ -115,9 +115,9 @@ function Blog() {
                                 </div>
                             ))}
                         </div>
-                        <div className="col-lg-4">                            
+                        <div className="col-lg-4">
                             <div className="recent-card">
-                                <h4>{t('common.recentPosts')}</h4>
+                                <h4>{t('recentPosts')}</h4>
                                 {activities.slice(0, 4).map(activity => (
                                     <div className="d-flex mb-4" key={activity.id}>
                                         <img src={activity.image} className="me-3 img-fluid" alt={activity.title} />
@@ -134,7 +134,7 @@ function Blog() {
                     </div>
                 </div>
             </section>
-            
+
             {/* gallery section */}
             <section className="gallery-grid my-5 mb-0">
                 <div className="row">

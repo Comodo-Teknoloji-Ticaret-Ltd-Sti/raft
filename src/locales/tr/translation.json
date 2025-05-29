@@ -1,4 +1,11 @@
 {
+  "explore": "Keşfet",
+  "viewTour": "Turu Görüntüle",
+  "viewDetails": "Detayları Görüntüle",
+  "activit": "Aktiviteler",
+  "categories": "Kategoriler",
+  "all": "Tümü",
+  "recentPosts": "Son Gönderiler",
   "nav": {
     "home": "Anasayfa",
     "about": "Hakkımızda",

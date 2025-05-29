@@ -1,4 +1,11 @@
 {
+  "explore": "Explore",
+  "viewTour": "View Tour",
+  "viewDetails": "View Details",
+  "activit": "Activities",
+  "categories": "Categories",
+  "all": "All",
+  "recentPosts": "Recent Posts",
   "nav": {
     "home": "Home",
     "about": "About",

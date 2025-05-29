@@ -79,7 +79,7 @@ function Index() {
                             <h1 className='text-white'>MC Raft</h1>
                             <h2 className="text-white">{t('hero.slide1.title')}</h2>
                             <p className="text-white fs-5">{t('hero.slide1.description')}</p>
-                            <button className="btn text-white hero-btn mt-4">{t('common.explore')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <button className="btn text-white hero-btn mt-4">{t('explore')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -90,7 +90,7 @@ function Index() {
                             <h1 className='text-white'>MC Raft</h1>
                             <h2 className="text-white">{t('hero.slide2.title')}</h2>
                             <p className="text-white fs-5">{t('hero.slide2.description')}</p>
-                            <button className="btn text-white hero-btn mt-4">{t('common.viewTour')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <button className="btn text-white hero-btn mt-4">{t('viewTour')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -101,7 +101,7 @@ function Index() {
                             <h1 className='text-white'>MC Raft</h1>
                             <h2 className="text-white">{t('hero.slide3.title')}</h2>
                             <p className="text-white fs-5">{t('hero.slide3.description')}</p>
-                            <button className="btn text-white hero-btn mt-4">{t('common.viewDetails')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <button className="btn text-white hero-btn mt-4">{t('viewDetails')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
