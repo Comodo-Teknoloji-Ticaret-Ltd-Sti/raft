@@ -1,32 +1,20 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import { Navigation, EffectFade } from 'swiper/modules';
-
 import btnArrow from '././../../assets/btn-arrow.svg'
 import plane from '././../../assets/raftico.svg'
-
-
-// Data
 import Destination from './../../Destination.json';
-
 import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-
-
 import steps1 from './../../assets/steps-1.svg'
 import steps2 from './../../assets/steps-2.svg'
 import steps3 from './../../assets/steps-3.svg'
 import FeatureImg1 from './../../assets/Feature-image-1.webp'
-
 import testBG from './../../assets/test-bg.webp'
-
-
-
 import { Link } from 'react-router-dom';
 import { motion } from "motion/react"
 import Footer from '../../Components/Footer/Footer';

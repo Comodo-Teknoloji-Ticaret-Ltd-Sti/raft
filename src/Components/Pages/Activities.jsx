@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 import blogAuthor from './../../assets/blog-author.jpeg';
-import activitiesData from './../../Activities.json';
+import activitiesData from '../../Activities.json';
 
 import galleryimage1 from '../../assets/gallery-image1.webp';
 import galleryimage2 from '../../assets/gallery-image2.webp';
@@ -13,7 +13,7 @@ import galleryimage3 from '../../assets/gallery-image3.webp';
 import galleryimage4 from '../../assets/gallery-image4.webp';
 import galleryimage5 from '../../assets/gallery-image5.webp';
 
-function Blog() {
+function Activities() {
     const [selectedCategory, setSelectedCategory] = useState('all');
     const { t, i18n } = useTranslation();
 
@@ -190,4 +190,4 @@ function Blog() {
     )
 }
 
-export default Blog;
+export default Activities;

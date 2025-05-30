@@ -23,7 +23,7 @@ function Nav() {
     const handleClickOutside = (event) => {
       const navbar = document.getElementById('navbarNav');
       const togglerButton = document.querySelector('.navbar-toggler');
-      
+
       if (isMenuOpen && navbar && !navbar.contains(event.target) && !togglerButton.contains(event.target)) {
         setIsMenuOpen(false);
       }
@@ -44,11 +44,9 @@ function Nav() {
 
   return (
     <>
-      <nav className={`navbar navbar-expand-lg custom-nav position-fixed w-100 ${
-        scrolled ? "scrolled-position" : "top-position"
-      } ${
-        scrolled ? "black-theme" : "white-theme"
-      }`}>
+      <nav className={`navbar navbar-expand-lg custom-nav position-fixed w-100 ${scrolled ? "scrolled-position" : "top-position"
+        } ${scrolled ? "black-theme" : "white-theme"
+        }`}>
         <div className="container">
           <Link to='/' className="logo navbar-brand" onClick={handleLinkClick}>
             MC<span> Raft</span>
@@ -68,7 +66,7 @@ function Nav() {
           <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item"><Link className="nav-link" to="/" onClick={handleLinkClick}>{t('nav.home')}</Link></li>
-              <li className="nav-item"><Link className="nav-link" to='/blog' onClick={handleLinkClick}>{t('nav.activities')}</Link></li>
+              <li className="nav-item"><Link className="nav-link" to='activities' onClick={handleLinkClick}>{t('nav.activities')}</Link></li>
               <li className="nav-item"><Link className="nav-link" to='contact' onClick={handleLinkClick}>{t('nav.contact')}</Link></li>
             </ul>
           </div>
