@@ -1,11 +1,7 @@
 import React from 'react'
 
 import { useTranslation } from 'react-i18next';
-import ins1 from '../../assets/Footer/buggy.jpg'
-import ins2 from '../../assets/Footer/fishing.jpg'
-import ins3 from '../../assets/Footer/lavender.jpg'
-import ins4 from '../../assets/Footer/rafting.jpg'
-import ins5 from '../../assets/Footer/zipline.jpg'
+
 
 function Footer() {
     const { t } = useTranslation();
@@ -42,28 +38,6 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="row mt-5">
-                        <div className="col">
-                            <div className="footer-img d-flex flex-wrap justify-content-center gap-3">
-                                <div className="img-wrapper">
-                                    <img src={ins1} alt="ins-image" />
-                                </div>
-                                <div className="img-wrapper">
-                                    <img src={ins2} alt="ins-image" />
-                                </div>
-                                <div className="img-wrapper">
-                                    <img src={ins3} alt="ins-image" />
-                                </div>
-                                <div className="img-wrapper">
-                                    <img src={ins4} alt="ins-image" />
-                                </div>
-                                <div className="img-wrapper">
-                                    <img src={ins5} alt="ins-image" />
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
-
                     <div className="copyright text-center mt-4 py-3 border-top">
                         <small></small>
                     </div>

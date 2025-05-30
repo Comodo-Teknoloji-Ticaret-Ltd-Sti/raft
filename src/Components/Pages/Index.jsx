@@ -1,5 +1,4 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -27,6 +26,10 @@ import tst4 from './../../assets/tst-4.webp'
 import abEleement1 from './../../assets/about-element-1.webp'
 import abEleement2 from './../../assets/about-element-2.webp'
 import abEleement3 from './../../assets/about-element-3.webp'
+import DiscoverImg1 from './../../assets/Afis/adventure.png'
+import DiscoverImg2 from './../../assets/Afis/buggy.png'
+import DiscoverImg3 from './../../assets/Afis/fishing.png'
+import DiscoverImg4 from './../../assets/Afis/tazi.png'
 import steps1 from './../../assets/steps-1.svg'
 import steps2 from './../../assets/steps-2.svg'
 import steps3 from './../../assets/steps-3.svg'
@@ -47,18 +50,11 @@ import footer from './../../assets/footer.webp'
 import { Link } from 'react-router-dom';
 import { motion } from "motion/react"
 import Footer from '../../Components/Footer/Footer';
-import discoverData from '../../AfisDesination.json';
-import comment from '../../Comment.json';
-import LanguageSwitcher from '../LanguageSwitcher';
 
 function Index() {
-    const { t, i18n } = useTranslation();
 
     return (
         <>
-            <div className="position-fixed top-0 end-0 m-3 z-3">
-                <LanguageSwitcher />
-            </div>
             {/* Hero Slider */}
             <Swiper
                 modules={[Navigation, EffectFade]}
@@ -77,9 +73,9 @@ function Index() {
                     <div className="hero hero1 d-flex flex-column justify-content-center align-items-center">
                         <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className='text-white'>MC Raft</h1>
-                            <h2 className="text-white">{t('hero.slide1.title')}</h2>
-                            <p className="text-white fs-5">{t('hero.slide1.description')}</p>
-                            <button className="btn text-white hero-btn mt-4">{t('explore')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <h2 className="text-white">Adrenalin Suyun İçinde!</h2>
+                            <p className="text-white fs-5">Serin sular, güçlü akıntılar ve eşsiz heyecan seni bekliyor.</p>
+                            <button className="btn text-white hero-btn mt-4">Keşfet <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -88,9 +84,9 @@ function Index() {
                     <div className="hero hero2 d-flex flex-column justify-content-center align-items-center">
                         <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className='text-white'>MC Raft</h1>
-                            <h2 className="text-white">{t('hero.slide2.title')}</h2>
-                            <p className="text-white fs-5">{t('hero.slide2.description')}</p>
-                            <button className="btn text-white hero-btn mt-4">{t('viewTour')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <h2 className="text-white">Tozu Dumana Kat!</h2>
+                            <p className="text-white fs-5">Engebeli arazilerde ATV ile unutulmaz bir maceraya çık.</p>
+                            <button className="btn text-white hero-btn mt-4">Tura Göz At <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -99,9 +95,9 @@ function Index() {
                     <div className="hero hero3 d-flex flex-column justify-content-center align-items-center">
                         <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
                             <h1 className='text-white'>MC Raft</h1>
-                            <h2 className="text-white">{t('hero.slide3.title')}</h2>
-                            <p className="text-white fs-5">{t('hero.slide3.description')}</p>
-                            <button className="btn text-white hero-btn mt-4">{t('viewDetails')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <h2 className="text-white">Doğanın Kalbindesin</h2>
+                            <p className="text-white fs-5">Tazı Kanyonu’nun nefes kesen manzarasıyla tanış.</p>
+                            <button className="btn text-white hero-btn mt-4">Detayları Gör <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -118,13 +114,14 @@ function Index() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     viewport={{ once: false, amount: 0.3 }}
                 >
-                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">                        <span>{t('destinations.subtitle')}</span>
+                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
+                        <span>Macera Noktaları</span>
                         <div className=" d-flex align-items-center gap-2">
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
-                            <h2>{t('destinations.title')}</h2>
+                            <h2>Popüler Aktiviteler</h2>
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
                         </div>
-                        <p>{t('destinations.description')}</p>
+                        <p>En çok tercih edilen doğa ve adrenalin dolu deneyimleri keşfet.</p>
                     </div>
                 </motion.div>
                 <motion.div className="destinations-wrapper mt-5"
@@ -158,29 +155,26 @@ function Index() {
 
                         extensions={{ AutoScroll }}
                     >
-                        <SplideTrack>                            {Destination.map(dest => {
-                            const t = dest.translations?.[i18n.language];
-                            if (!t) return null; // seçilen dilde veri yoksa atla
-
-                            return (
+                        <SplideTrack>
+                            {Destination.map(dest => (
                                 <SplideSlide key={dest.id}>
                                     <div className="dest-card position-relative">
                                         <div className="dest-img overflow-hidden rounded">
-                                            <img src={t.image} className='img-fluid' alt={t.name} />
-                                            <span className="dest-price position-absolute top-0 end-0"> {dest.buy?.[i18n.language]}</span>
+                                            <img src={dest.image} className='img-fluid' alt={dest.name} />
+                                            <span className="dest-price position-absolute top-0 end-0">{dest.price}</span>
                                         </div>
                                         <div className="dest-content p-4 rounded border top-0 start-0 mt-3 position-absolute">
                                             <i className="fa-solid fa-arrow-right dest-arrow position-absolute"></i>
-                                            <h2>{t.name}</h2>
-                                            <p>{t.pere}</p>                                                <div className="dest-day border-top pt-3">
+                                            <h2>{dest.name}</h2>
+                                            <p>{dest.pere}</p>
+                                            <div className="dest-day border-top pt-3">
                                                 <i className="bi bi-send-fill me-2"></i>
-                                                <span>{dest.days?.[i18n.language]}</span>
+                                                <span>{dest.days}</span>
                                             </div>
                                         </div>
                                     </div>
                                 </SplideSlide>
-                            );
-                        })}
+                            ))}
                         </SplideTrack>
                     </Splide>
                 </motion.div>
@@ -193,36 +187,65 @@ function Index() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     viewport={{ once: false, amount: 0.3 }}
                 >
-                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">                        <span>{t('discover.subtitle')}</span>
+                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
+                        <span>Aktivitelerimiz</span>
                         <div className=" d-flex align-items-center gap-2">
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
-                            <h2>{t('discover.title')}</h2>
+                            <h2>Doğanın Keyfini Çıkarın</h2>
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
                         </div>
-                        <p>{t('discover.description')}</p>
+                        <p>Rafting, quad, balıkçılık, buggy, jeep safari, lavanta tarlaları, Tazı Kanyonu, macera parkı ve zipline ile doğada heyecan ve huzuru bir arada yaşayın.</p>
                     </div>
                 </motion.div>
-                <div className="row px-5 my-5 mx-0 gap-3 align-items-center justify-content-center">                    {discoverData.map((item, index) => {
-                    const t = item.translations?.[i18n.language];
-                    if (!t) return null;
-
-                    return (
-                        <motion.div
-                            key={item.id}
-                            className="col-lg-2 discover-card position-relative"
-                            initial={{ opacity: 0, x: 100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6, delay: 0.3 + index * 0.2 }}
-                            viewport={{ once: false, amount: 0.3 }}
-                        >
-                            <img src={t.image} className="img-fluid" alt={t.name} />
-                            <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
-                                <span><i className="bi bi-geo-alt-fill"></i> {t.name}</span>
-                                <h2 className="mt-4">{t.pere}</h2>
-                            </div>
-                        </motion.div>
-                    );
-                })}
+                <div className="row px-5 my-5 mx-0 gap-3 align-items-center justify-content-center">
+                    <motion.div className="col-lg-2 discover-card position-relative"
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.3 }}
+                        viewport={{ once: false, amount: 0.3 }}
+                    >
+                        <img src={DiscoverImg1} className='img-fluid' alt="" />
+                        <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
+                            <span><i className="bi bi-geo-alt-fill"></i> Adventure Park</span>
+                            <h2 className='mt-4'>Güvenli, kontrollü ve profesyonel rehber eşliğinde</h2>
+                        </div>
+                    </motion.div>
+                    <motion.div className="col-lg-2 discover-card position-relative"
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.5 }}
+                        viewport={{ once: false, amount: 0.3 }}
+                    >
+                        <img src={DiscoverImg2} className='img-fluid' alt="" />
+                        <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
+                            <span><i className="bi bi-geo-alt-fill"></i> Buggy</span>
+                            <h2 className='mt-4'> Doğanın kalbinde hızın, heyecanın ve adrenalinin zirvesine ulaş!</h2>
+                        </div>
+                    </motion.div>
+                    <motion.div className="col-lg-2 discover-card position-relative"
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.7 }}
+                        viewport={{ once: false, amount: 0.3 }}
+                    >
+                        <img src={DiscoverImg3} className='img-fluid' alt="" />
+                        <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
+                            <span><i className="bi bi-geo-alt-fill"></i> Fishing</span>
+                            <h2 className='mt-4'>Doğayla baş başa, keyifli ve sabır dolu bir balık tutma deneyimi seni bekliyor!</h2>
+                        </div>
+                    </motion.div>
+                    <motion.div className="col-lg-2 discover-card position-relative"
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, delay: 0.9 }}
+                        viewport={{ once: false, amount: 0.3 }}
+                    >
+                        <img src={DiscoverImg4} className='img-fluid' alt="" />
+                        <div className="discover-card-content position-absolute d-flex flex-column align-items-center justify-content-center text-center">
+                            <span><i className="bi bi-geo-alt-fill"></i> Tazi Kanyonu</span>
+                            <h2 className='mt-4'> mor renklere boyanmış bir doğa şöleni seni bekliyor.</h2>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
             {/* working Steps */}
@@ -232,10 +255,12 @@ function Index() {
                 <div className="container">
                     <div className="row">
                         <div className="section-title discover-title">
-                            <div className="text-start flex-column d-flex align-items-start justify-content-start gap-3">                                <span>{t('steps.section.subtitle')}</span>
+                            <div className="text-start flex-column d-flex align-items-start justify-content-start gap-3">
+                                <span>Nasıl Katılırım?</span>
                                 <div className=" d-flex align-items-center gap-2">
                                     <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
-                                    <h2>{t('steps.section.title')}</h2>
+                                    <h2>3 Adımda<br />
+                                        Maceraya Katıl</h2>
                                     <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
                                 </div>
                             </div>
@@ -247,8 +272,8 @@ function Index() {
                                 <img src={steps1} className='img-fluid' alt="" />
                             </div>
                             <div className="step-content">
-                                <h2>{t('steps.step1.title')}</h2>
-                                <p>{t('steps.step1.description')}</p>
+                                <h2>Aktiviteni Seç</h2>
+                                <p>Rafting, zipline, quad safari, lavanta tarlası gezisi ve daha fazlası arasından dilediğini seç.</p>
                             </div>
                         </div>
                         <div className="col-lg-4 step-card rounded border p-4 d-flex flex-column gap-3">
@@ -256,8 +281,8 @@ function Index() {
                                 <img src={steps2} className='img-fluid' alt="" />
                             </div>
                             <div className="step-content">
-                                <h2>{t('steps.step2.title')}</h2>
-                                <p>{t('steps.step2.description')}</p>
+                                <h2>Kolayca Rezervasyon Yap</h2>
+                                <p>Müşteri hizmetlerimiz veya WhatsApp üzerinden hızlı ve güvenli bir şekilde rezervasyonunu tamamla.</p>
                             </div>
                         </div>
                         <div className="col-lg-4 step-card rounded border p-4 d-flex flex-column gap-3">
@@ -265,8 +290,8 @@ function Index() {
                                 <img src={steps3} className='img-fluid' alt="" />
                             </div>
                             <div className="step-content">
-                                <h2>{t('steps.step3.title')}</h2>
-                                <p>{t('steps.step3.description')}</p>
+                                <h2>Belirtilen Noktada Hazır Ol</h2>
+                                <p>Belirlenen saatte buluşma noktasında ol, macera dolu bir gün seni bekliyor!</p>
                             </div>
                         </div>
                     </div>
@@ -277,49 +302,85 @@ function Index() {
                 <img src={testBG} className='img-fluid test-bg-img position-absolute' alt="" />
                 <img src={testBG} className='img-fluid test-bg-img2 position-absolute' alt="" />
                 <div className="section-title test-title">
-                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">                        <span>{t('testimonials.subtitle')}</span>
+                    <div className="text-center flex-column d-flex align-items-center justify-content-center gap-3">
+                        <span>Misafir Yorumları</span>
                         <div className=" d-flex align-items-center gap-2">
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
-                            <h2>{t('testimonials.title')}</h2>
+                            <h2>Misafirlerimiz Ne Diyor?</h2>
                             <img src={plane} alt="" className="img-fluid" style={{ width: 60, height: 60 }} />
                         </div>
-                        <p>{t('testimonials.description')}</p>
+                        <p>Etkinliklerimize katılan misafirlerimiz, doğayla iç içe, heyecan dolu ve unutulmaz anılarla dolu bir gün geçirdiklerini söylüyorlar. İşte bazı yorumlar;</p>
                     </div>
                 </div>
                 <div className="container mt-5">
                     <div className="row">
-                        <Swiper slidesPerView={1} spaceBetween={10} loop={true} className="test-Swiper">
-                            {comment.map(item => (
-                                <SwiperSlide key={item.id}>
-                                    <div className="row align-items-center">
-                                        <div className="col-lg-6">
-                                            <div className="test-img d-flex align-items-center justify-content-center">
-                                                <img src={item.image} className="img-fluid" alt="testimonial" />
-                                            </div>
+                        <Swiper
+                            slidesPerView={1}
+                            spaceBetween={10}
+                            loop={true}
+                            className='test-Swiper'
+                        >
+                            <SwiperSlide>
+                                <div className="row align-items-center">
+                                    <div className="col-lg-6">
+                                        <div className="test-img d-flex align-items-center justify-content-center">
+                                            <img src={tstimg1} className='img-fluid' alt="" />
                                         </div>
-                                        <div className="col-lg-6">
-                                            <div className="test-content">
-                                                <img src={item.quoteImage} className="img-fluid test-content-img" alt="quote" />                                                <p className="test-pere">"{item.text[i18n.language]}"</p>
-                                                <div className="test-stars">
-                                                    {[...Array(item.stars)].map((_, i) => (
-                                                        <i key={i} className="bi bi-star-fill"></i>
-                                                    ))}
-                                                </div>
-                                                <div className="test-user mt-3 d-flex align-items-center gap-2">
-                                                    <img src={item.user.avatar} className="img-fluid" alt={item.user.name} />
-                                                    <div className="test-user-info">
-                                                        <h3>{item.user.name}</h3>
-                                                        <p className="m-0">{item.user.info[i18n.language]}</p>
-                                                    </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <div className="test-content">
+                                            <img src={quote} className='img-fluid test-content-img' alt="" />
+                                            <p className='test-pere'>"MC Raft sayesinde sadece bir gün değil, hayat boyu unutamayacağımız anılar biriktirdik. Jeep safari ve zipline inanılmazdı! Organizasyon kusursuzdu, ekip çok ilgiliydi. Tüm arkadaşlarımıza tavsiye ediyoruz."</p>
+
+                                            <div className="test-stars">
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                            </div>
+                                            <div className="test-user mt-3 d-flex align-items-center gap-2">
+                                                <img src={tstimg2} className='img-fluid' alt="" />
+                                                <div className="test-user-info">
+                                                    <h3>FURKAN AYAKDAŞ</h3>
+                                                    <p className='m-0'>Antalya / Türkiye</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </SwiperSlide>
-                            ))}
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="row align-items-center">
+                                    <div className="col-lg-6">
+                                        <div className="test-img d-flex align-items-center justify-content-center">
+                                            <img src={tstimg1} className='img-fluid' alt="" />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <div className="test-content">
+                                            <img src={quote} className='img-fluid test-content-img' alt="" />
+                                            <p className='test-pere'>"Booking with this travel agency was a game changer their meticulous planning and personalized approach made our trip not just a vacation but a collection of unforgettable moments. From seamless logistics to hidden gems, they turned our travel dreams into a reality, earning our trust and loyalty."</p>
+                                            <div className="test-stars">
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                                <i className="bi bi-star-fill"></i>
+                                            </div>
+                                            <div className="test-user mt-3 d-flex align-items-center gap-2">
+                                                <img src={tstimg2} className='img-fluid' alt="" />
+                                                <div className="test-user-info">
+                                                    <h3>TASHA STEWART</h3>
+                                                    <p className='m-0'>Web Developer at ThemeXriver</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
                         </Swiper>
-                    </div>
-                </div>
+                    </div>                </div>
             </div>
             {/* Footer */}
             <Footer />

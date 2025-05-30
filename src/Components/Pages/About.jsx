@@ -18,8 +18,6 @@ import travelexperienceimage1 from '../../assets/experience-image1.webp'
 import travelexperienceimage2 from '../../assets/experience-image2.webp'
 import travelexperienceimage3 from '../../assets/experience-image3.webp'
 
-import travelplace from '../../assets/place-image.webp'
-import placeelement from '../../assets/place-element.webp'
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
@@ -34,14 +32,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import { EffectCards } from 'swiper/modules';
-
-import price1 from '../../assets/price-1.webp'
-import price2 from '../../assets/price-2.webp'
-import price3 from '../../assets/price-3.webp'
-import price4 from '../../assets/price-4.webp'
-import price5 from '../../assets/price-5.webp'
-import price6 from '../../assets/price-6.webp'
-
 
 import galleryimage1 from '../../assets/gallery-image1.webp'
 import galleryimage2 from '../../assets/gallery-image2.webp'
