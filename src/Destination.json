@@ -1,10 +1,9 @@
-[
-    {
+[    {
         "id": 1,
         "buy": {
-            "tr": "Satın Al",
-            "en": "Buy Now",
-            "ru": "Купить"
+            "tr": "Rezervasyon",
+            "en": "Reservation",
+            "ru": "Бронирование"
         },
         "days": {
             "tr": "Her gün 3 seans",
@@ -33,13 +32,12 @@
             "en": "Koprulu Canyon",
             "ru": "Каньон Копрюлю"
         }
-    },
-    {
+    },    {
         "id": 2,
         "buy": {
-            "tr": "Satın Al",
-            "en": "Buy Now",
-            "ru": "Купить"
+            "tr": "Rezervasyon",
+            "en": "Reservation",
+            "ru": "Бронирование"
         },
         "days": {
             "tr": "09:00 - 18:00 arası",
@@ -68,13 +66,12 @@
             "en": "Beskonak Forest Road",
             "ru": "Лесная дорога Бешконак"
         }
-    },
-    {
+    },    {
         "id": 3,
         "buy": {
-            "tr": "Satın Al",
-            "en": "Buy Now",
-            "ru": "Купить"
+            "tr": "Rezervasyon",
+            "en": "Reservation",
+            "ru": "Бронирование"
         },
         "days": {
             "tr": "Sabah & Akşam Seansları",
@@ -103,13 +100,12 @@
             "en": "Lakeside",
             "ru": "Берег озера"
         }
-    },
-    {
+    },    {
         "id": 4,
         "buy": {
-            "tr": "Satın Al",
-            "en": "Buy Now",
-            "ru": "Купить"
+            "tr": "Rezervasyon",
+            "en": "Reservation",
+            "ru": "Бронирование"
         },
         "days": {
             "tr": "Gün boyu turlar",
@@ -138,13 +134,12 @@
             "en": "Off-road Track",
             "ru": "Внедорожная трасса"
         }
-    },
-    {
+    },    {
         "id": 5,
         "buy": {
-            "tr": "Satın Al",
-            "en": "Buy Now",
-            "ru": "Купить"
+            "tr": "Rezervasyon",
+            "en": "Reservation",
+            "ru": "Бронирование"
         },
         "days": {
             "tr": "Sabah ve Öğlen Turları",
@@ -173,13 +168,12 @@
             "en": "Nature Trail",
             "ru": "Природная тропа"
         }
-    },
-    {
+    },    {
         "id": 6,
         "buy": {
-            "tr": "Satın Al",
-            "en": "Buy Now",
-            "ru": "Купить"
+            "tr": "Rezervasyon",
+            "en": "Reservation",
+            "ru": "Бронирование"
         },
         "days": {
             "tr": "Sabah ve Öğleden sonra",
@@ -208,13 +202,12 @@
             "en": "Lavender Valley",
             "ru": "Лавандовая долина"
         }
-    },
-    {
+    },    {
         "id": 7,
         "buy": {
-            "tr": "Satın Al",
-            "en": "Buy Now",
-            "ru": "Купить"
+            "tr": "Rezervasyon",
+            "en": "Reservation",
+            "ru": "Бронирование"
         },
         "days": {
             "tr": "Sabah ve Öğlen Seansları",
@@ -243,13 +236,12 @@
             "en": "Tazı Canyon",
             "ru": "Каньон Тазы"
         }
-    },
-    {
+    },    {
         "id": 8,
         "buy": {
-            "tr": "Satın Al",
-            "en": "Buy Now",
-            "ru": "Купить"
+            "tr": "Rezervasyon",
+            "en": "Reservation",
+            "ru": "Бронирование"
         },
         "days": {
             "tr": "09:00 - 19:00 arası",

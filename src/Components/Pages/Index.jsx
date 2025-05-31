@@ -24,6 +24,14 @@ import LanguageSwitcher from '../LanguageSwitcher';
 
 function Index() {
     const { t, i18n } = useTranslation();
+    const destinationsRef = React.useRef(null);
+
+    const scrollToDestinations = () => {
+        destinationsRef.current?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    };
 
     return (
         <>
@@ -46,11 +54,10 @@ function Index() {
             >
                 <SwiperSlide>
                     <div className="hero hero1 d-flex flex-column justify-content-center align-items-center">
-                        <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">
-                            <h1 className='text-white'>MC Raft</h1>
+                        <div className="hero-content w-100 d-flex flex-column justify-content-center align-items-center text-center">                            <h1 className='text-white'>MC Raft</h1>
                             <h2 className="text-white">{t('hero.slide1.title')}</h2>
                             <p className="text-white fs-5">{t('hero.slide1.description')}</p>
-                            <button className="btn text-white hero-btn mt-4">{t('explore')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
+                            <button onClick={scrollToDestinations} className="btn text-white hero-btn mt-4">{t('explore')} <img src={btnArrow} className="img-fluid ms-2" alt="" /></button>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -81,8 +88,7 @@ function Index() {
                 <i className="bi bi-arrow-left-short swiper-btn swiper-prev"></i>
                 <i className="bi bi-arrow-right-short swiper-btn swiper-next"></i>
             </Swiper>
-            {/* Destinations */}
-            <div className="destinations py-5 my-5">
+            {/* Destinations */}            <div className="destinations py-5 my-5" ref={destinationsRef}>
                 <motion.div className="section-title"
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -135,15 +141,20 @@ function Index() {
 
                             return (
                                 <SplideSlide key={dest.id}>
-                                    <div className="dest-card position-relative">
-                                        <div className="dest-img overflow-hidden rounded">
+                                    <div className="dest-card position-relative">                                        <div className="dest-img overflow-hidden rounded">
                                             <img src={t.image} className='img-fluid' alt={t.name} />
-                                            <span className="dest-price position-absolute top-0 end-0"> {dest.buy?.[i18n.language]}</span>
+                                            <a 
+                                                href="https://wa.me/905331530229?text=Hello,%20I%20am%20interested%20in%20your%20services" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                                className="dest-price position-absolute top-0 end-0"
+                                            >
+                                                {dest.buy?.[i18n.language]}
+                                            </a>
                                         </div>
                                         <div className="dest-content p-4 rounded border top-0 start-0 mt-3 position-absolute">
-                                            <i className="fa-solid fa-arrow-right dest-arrow position-absolute"></i>
-                                            <h2>{t.name}</h2>
-                                            <p>{t.pere}</p>                                                <div className="dest-day border-top pt-3">
+                                            <i className="fa-solid fa-arrow-right dest-arrow position-absolute"></i>                                            <h2>{t.name}</h2>
+                                            <p>{t.pere}</p>                                            <div className="dest-day border-top pt-3">
                                                 <i className="bi bi-send-fill me-2"></i>
                                                 <span>{dest.days?.[i18n.language]}</span>
                                             </div>

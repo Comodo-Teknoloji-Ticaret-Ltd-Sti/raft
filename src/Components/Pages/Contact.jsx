@@ -52,7 +52,7 @@ function Contact() {
                                     <h5>{t('contact.phone')}</h5>
 
                                     <p className="mb-0">(+90) 533 153 02 29</p>
-                                    <p>(05xx) xxx xx xx</p>
+                                    <p>(+90) 539 721 85 14</p>
                                 </div>
                             </div>
                             <div className="info-block d-flex">
@@ -78,12 +78,10 @@ function Contact() {
                                     referrerPolicy="no-referrer-when-downgrade"
                                 />
                             </div>
-                        </div>
-                        <div className="contact-icons d-flex gap-2">
-                            <i className="fab fa-facebook-f"></i>
-                            <i className="fab fa-instagram"></i>
-                            <i className="fab fa-pinterest-p"></i>
-                            <i className="fab fa-linkedin-in"></i>
+                        </div>                        <div className="contact-icons d-flex gap-2">
+                            <i className="fab fa-facebook-f" onClick={() => window.open('https://www.facebook.com', '_blank')} style={{ cursor: 'pointer' }}></i>
+                            <i className="fab fa-instagram" onClick={() => window.open('https://www.instagram.com/mc_rafting/', '_blank')} style={{ cursor: 'pointer' }}></i>
+                            <i className="fab fa-whatsapp" onClick={() => window.open('https://wa.me/905331530229', '_blank')} style={{ cursor: 'pointer' }}></i>
                         </div>
                     </div>
                 </div>
