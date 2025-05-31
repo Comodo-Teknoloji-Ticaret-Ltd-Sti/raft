@@ -1,4 +1,5 @@
-[    {
+[
+    {
         "id": 1,
         "buy": {
             "tr": "Rezervasyon",
@@ -6,9 +7,9 @@
             "ru": "Бронирование"
         },
         "days": {
-            "tr": "Her gün 3 seans",
-            "en": "3 sessions daily",
-            "ru": "Каждый день 3 сеанса"
+            "tr": "Gün boyu turlar",
+            "en": "All-day tours",
+            "ru": "Туры на целый день"
         },
         "translations": {
             "tr": {
@@ -32,7 +33,8 @@
             "en": "Koprulu Canyon",
             "ru": "Каньон Копрюлю"
         }
-    },    {
+    },
+    {
         "id": 2,
         "buy": {
             "tr": "Rezervasyon",
@@ -40,9 +42,9 @@
             "ru": "Бронирование"
         },
         "days": {
-            "tr": "09:00 - 18:00 arası",
-            "en": "From 09:00 to 18:00",
-            "ru": "С 09:00 до 18:00"
+            "tr": "Gün boyu turlar",
+            "en": "All-day tours",
+            "ru": "Туры на целый день"
         },
         "translations": {
             "tr": {
@@ -66,7 +68,8 @@
             "en": "Beskonak Forest Road",
             "ru": "Лесная дорога Бешконак"
         }
-    },    {
+    },
+    {
         "id": 3,
         "buy": {
             "tr": "Rezervasyon",
@@ -74,9 +77,9 @@
             "ru": "Бронирование"
         },
         "days": {
-            "tr": "Sabah & Akşam Seansları",
-            "en": "Morning & Evening Sessions",
-            "ru": "Утренние и вечерние сеансы"
+            "tr": "Gün boyu turlar",
+            "en": "All-day tours",
+            "ru": "Туры на целый день"
         },
         "translations": {
             "tr": {
@@ -100,7 +103,8 @@
             "en": "Lakeside",
             "ru": "Берег озера"
         }
-    },    {
+    },
+    {
         "id": 4,
         "buy": {
             "tr": "Rezervasyon",
@@ -134,7 +138,8 @@
             "en": "Off-road Track",
             "ru": "Внедорожная трасса"
         }
-    },    {
+    },
+    {
         "id": 5,
         "buy": {
             "tr": "Rezervasyon",
@@ -142,9 +147,9 @@
             "ru": "Бронирование"
         },
         "days": {
-            "tr": "Sabah ve Öğlen Turları",
-            "en": "Morning and Noon Tours",
-            "ru": "Утренние и дневные туры"
+            "tr": "Gün boyu turlar",
+            "en": "All-day tours",
+            "ru": "Туры на целый день"
         },
         "translations": {
             "tr": {
@@ -168,7 +173,8 @@
             "en": "Nature Trail",
             "ru": "Природная тропа"
         }
-    },    {
+    },
+    {
         "id": 6,
         "buy": {
             "tr": "Rezervasyon",
@@ -176,9 +182,9 @@
             "ru": "Бронирование"
         },
         "days": {
-            "tr": "Sabah ve Öğleden sonra",
-            "en": "Morning and Afternoon",
-            "ru": "Утро и после полудня"
+            "tr": "Gün boyu turlar",
+            "en": "All-day tours",
+            "ru": "Туры на целый день"
         },
         "translations": {
             "tr": {
@@ -202,7 +208,8 @@
             "en": "Lavender Valley",
             "ru": "Лавандовая долина"
         }
-    },    {
+    },
+    {
         "id": 7,
         "buy": {
             "tr": "Rezervasyon",
@@ -210,9 +217,9 @@
             "ru": "Бронирование"
         },
         "days": {
-            "tr": "Sabah ve Öğlen Seansları",
-            "en": "Morning and Noon Sessions",
-            "ru": "Утренние и дневные сеансы"
+            "tr": "Gün boyu turlar",
+            "en": "All-day tours",
+            "ru": "Туры на целый день"
         },
         "translations": {
             "tr": {
@@ -236,7 +243,8 @@
             "en": "Tazı Canyon",
             "ru": "Каньон Тазы"
         }
-    },    {
+    },
+    {
         "id": 8,
         "buy": {
             "tr": "Rezervasyon",
@@ -244,9 +252,9 @@
             "ru": "Бронирование"
         },
         "days": {
-            "tr": "09:00 - 19:00 arası",
-            "en": "From 09:00 to 19:00",
-            "ru": "С 09:00 до 19:00"
+            "tr": "Gün boyu turlar",
+            "en": "All-day tours",
+            "ru": "Туры на целый день"
         },
         "translations": {
             "tr": {
