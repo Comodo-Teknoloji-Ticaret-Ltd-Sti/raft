@@ -61,8 +61,7 @@ function Contact() {
                                 </div>
                                 <div className="info-text">
                                     <h5>{t('contact.email')}</h5>
-                                    <p className="mb-0">info@macerapark.com</p>
-                                    <p>support@macerapark.com</p>
+                                    <p className="mb-0">info.mcoutdoor@gmail.com</p>
                                 </div>
                             </div>
                         </div>
